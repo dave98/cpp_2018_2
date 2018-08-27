@@ -14,18 +14,15 @@ int min(int, int);
 
 int main(){
   vector< vector<double> >  a(1000, vector<double>(200, rand()%100) );
-  vector< vector<double> >  b(200, vector<double>(100, rand()%100) );
+  vector< vector<double> >  b(200, vector<double>(1000, rand()%100) );
 
   multi_1(a, b);
-  //multi_2(a, b);
+  multi_2(a, b);
   //print_v(a);
 
 }
 
 void multi_1(vector<vector<double>> a, vector<vector<double>> b){
-  //--->a*b
-  unsigned int t0, t1;
-  t0 = clock();
 
   vector<vector<double>> c(a.size(), vector<double>(b[0].size(), 0));
 
@@ -37,27 +34,32 @@ void multi_1(vector<vector<double>> a, vector<vector<double>> b){
       }
   }
 
-  t1 = clock();
-  double time_ = (double(t1-t0)/CLOCKS_PER_SEC);
-  cout << "Done 1 on: " << time_ << endl;
+  cout<<"Hi_1"<<endl;
 }
 
-void multi_2( vector<vector<double>> a, vector<vector<double>> b){
 
-  unsigned int b = 4;
-  vector<vector<double>> c(a.size(), vector<double>(b[0].size(), 0));
+void multi_2( vector< vector<double> > a, vector<vector<double>> b){
 
- for(unsigned int i  = 0; i < c.size(); i+=b){
-   for(unsigned int j = 0; i < c[0].size(); j+=b){
-     for(unsigned int k = 0; k < a[0].size(); k+=b){
-       for(unsigned int i_0 = i; i_0 < min(i + b - 1, n); i_0++){
+  vector< vector<double> > c(a.size(), vector<double>(b[0].size(),0));
 
-       }
-     }
-   }
- }
+  unsigned int jump = 8;
+  for(unsigned int i = 0; i < a.size(); i+=jump){
+    for(unsigned int j = 0; j < b[0].size(); j+=jump){
+      for(unsigned int k = 0; k < a[0].size(); k+=jump){
+        for(unsigned int i0 = i; i0 < min(i + jump - 1, a.size()); i0++){
+          for(unsigned int j0 = j; j0 < min(j + jump -1, b[0].size()); j0++){
+            for(unsigned int k0 = k; k0 < min(k + jump - 1, a[0].size()); k0++){
+              c[i0][j0] = c[i0][j0] + (a[i0][k0] * b[k0][j0]);
+            }
+          }
+        }
+      }
+    }
+  }
 
+  cout<<"Hi_2"<<endl;
 }
+
 
 
 int min(int a, int b){
