@@ -18,7 +18,6 @@ int main(){
 
   multi_1(a, b);
   multi_2(a, b);
-  //print_v(a);
 
 }
 
