@@ -1,0 +1,2778 @@
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_1 $ valgrind --tool=cachegrind ./exec_1 
+==8326== Cachegrind, a cache and branch-prediction profiler
+==8326== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==8326== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==8326== Command: ./exec_1
+==8326== 
+--8326-- warning: L3 cache found, using its data for the LL simulation.
+100
+==8326== 
+==8326== I   refs:      2,226,868
+==8326== I1  misses:        1,642
+==8326== LLi misses:        1,562
+==8326== I1  miss rate:      0.07%
+==8326== LLi miss rate:      0.07%
+==8326== 
+==8326== D   refs:        750,750  (548,157 rd   + 202,593 wr)
+==8326== D1  misses:       17,480  ( 13,934 rd   +   3,546 wr)
+==8326== LLd misses:       10,509  (  7,780 rd   +   2,729 wr)
+==8326== D1  miss rate:       2.3% (    2.5%     +     1.8%  )
+==8326== LLd miss rate:       1.4% (    1.4%     +     1.3%  )
+==8326== 
+==8326== LL refs:          19,122  ( 15,576 rd   +   3,546 wr)
+==8326== LL misses:        12,071  (  9,342 rd   +   2,729 wr)
+==8326== LL miss rate:        0.4% (    0.3%     +     1.3%  )
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_1 $ valgrind --tool=cachegrind ./exec_1 
+==8337== Cachegrind, a cache and branch-prediction profiler
+==8337== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==8337== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==8337== Command: ./exec_1                                                                                                                                             
+==8337==                                                                                                                                                               
+--8337-- warning: L3 cache found, using its data for the LL simulation.                                                                                                
+300                                                                                                                                                                    
+==8337==                                                                                                                                                               
+==8337== I   refs:      3,022,856                                                                                                                                      
+==8337== I1  misses:        1,663                                                                                                                                      
+==8337== LLi misses:        1,565                                                                                                                                      
+==8337== I1  miss rate:      0.06%                                                                                                                                     
+==8337== LLi miss rate:      0.05%                                                                                                                                     
+==8337== 
+==8337== D   refs:      2,216,433  (1,283,954 rd   + 932,479 wr)
+==8337== D1  misses:       28,048  (   14,325 rd   +  13,723 wr)
+==8337== LLd misses:       20,659  (    7,780 rd   +  12,879 wr)
+==8337== D1  miss rate:       1.3% (      1.1%     +     1.5%  )
+==8337== LLd miss rate:       0.9% (      0.6%     +     1.4%  )
+==8337== 
+==8337== LL refs:          29,711  (   15,988 rd   +  13,723 wr)
+==8337== LL misses:        22,224  (    9,345 rd   +  12,879 wr)
+==8337== LL miss rate:        0.4% (      0.2%     +     1.4%  )
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_1 $ valgrind --tool=cachegrind ./exec_1 
+==8346== Cachegrind, a cache and branch-prediction profiler
+==8346== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==8346== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==8346== Command: ./exec_1
+==8346== 
+--8346-- warning: L3 cache found, using its data for the LL simulation.
+500
+==8346== 
+==8346== I   refs:      4,402,569
+==8346== I1  misses:        1,664
+==8346== LLi misses:        1,573
+==8346== I1  miss rate:      0.04%
+==8346== LLi miss rate:      0.04%
+==8346== 
+==8346== D   refs:      4,817,193  (2,588,073 rd   + 2,229,120 wr)
+==8346== D1  misses:       48,615  (   14,700 rd   +    33,915 wr)
+==8346== LLd misses:       40,810  (    7,781 rd   +    33,029 wr)
+==8346== D1  miss rate:       1.0% (      0.6%     +       1.5%  )
+==8346== LLd miss rate:       0.8% (      0.3%     +       1.5%  )
+==8346== 
+==8346== LL refs:          50,279  (   16,364 rd   +    33,915 wr)
+==8346== LL misses:        42,383  (    9,354 rd   +    33,029 wr)
+==8346== LL miss rate:        0.5% (      0.1%     +       1.5%  )
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_1 $ valgrind --tool=cachegrind ./exec_1 
+==8354== Cachegrind, a cache and branch-prediction profiler
+==8354== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==8354== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==8354== Command: ./exec_1
+==8354== 
+--8354-- warning: L3 cache found, using its data for the LL simulation.
+700
+==8354== 
+==8354== I   refs:      6,392,204
+==8354== I1  misses:        1,664
+==8354== LLi misses:        1,597
+==8354== I1  miss rate:      0.03%
+==8354== LLi miss rate:      0.02%
+==8354== 
+==8354== D   refs:      8,680,132  (4,521,029 rd   + 4,159,103 wr)
+==8354== D1  misses:       79,228  (   15,106 rd   +    64,122 wr)
+==8354== LLd misses:       71,439  (    8,238 rd   +    63,201 wr)
+==8354== D1  miss rate:       0.9% (      0.3%     +       1.5%  )
+==8354== LLd miss rate:       0.8% (      0.2%     +       1.5%  )
+==8354== 
+==8354== LL refs:          80,892  (   16,770 rd   +    64,122 wr)
+==8354== LL misses:        73,036  (    9,835 rd   +    63,201 wr)
+==8354== LL miss rate:        0.5% (      0.1%     +       1.5%  )
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_1 $ valgrind --tool=cachegrind ./exec_1 
+==8363== Cachegrind, a cache and branch-prediction profiler
+==8363== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==8363== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==8363== Command: ./exec_1
+==8363== 
+--8363-- warning: L3 cache found, using its data for the LL simulation.
+900
+==8363== 
+==8363== I   refs:      9,038,412
+==8363== I1  misses:        1,664
+==8363== LLi misses:        1,597
+==8363== I1  miss rate:      0.02%
+==8363== LLi miss rate:      0.02%
+==8363== 
+==8363== D   refs:      13,832,492  (7,099,921 rd   + 6,732,571 wr)
+==8363== D1  misses:      119,893  (   15,545 rd   +   104,348 wr)
+==8363== LLd misses:      112,023  (    8,672 rd   +   103,351 wr)
+==8363== D1  miss rate:       0.9% (      0.2%     +       1.5%  )
+==8363== LLd miss rate:       0.8% (      0.1%     +       1.5%  )
+==8363== 
+==8363== LL refs:         121,557  (   17,209 rd   +   104,348 wr)
+==8363== LL misses:       113,620  (   10,269 rd   +   103,351 wr)
+==8363== LL miss rate:        0.5% (      0.1%     +       1.5%  )
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_1 $ valgrind --tool=cachegrind ./exec_1 
+==8372== Cachegrind, a cache and branch-prediction profiler
+==8372== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==8372== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==8372== Command: ./exec_1
+==8372== 
+--8372-- warning: L3 cache found, using its data for the LL simulation.
+1100
+==8372== brk segment overflow in thread #1: can't grow to 0x4a2c000
+==8372== brk segment overflow in thread #1: can't grow to 0x4a2d000
+==8372== 
+==8372== I   refs:      12,391,952
+==8372== I1  misses:         1,678
+==8372== LLi misses:         1,611
+==8372== I1  miss rate:       0.01%
+==8372== LLi miss rate:       0.01%
+==8372== 
+==8372== D   refs:      20,301,332  (10,342,397 rd   + 9,958,935 wr)
+==8372== D1  misses:       170,506  (    15,945 rd   +   154,561 wr)
+==8372== LLd misses:       162,578  (     9,070 rd   +   153,508 wr)
+==8372== D1  miss rate:        0.8% (       0.2%     +       1.6%  )
+==8372== LLd miss rate:        0.8% (       0.1%     +       1.5%  )
+==8372== 
+==8372== LL refs:          172,184  (    17,623 rd   +   154,561 wr)
+==8372== LL misses:        164,189  (    10,681 rd   +   153,508 wr)
+==8372== LL miss rate:         0.5% (       0.0%     +       1.5%  )
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_1 $ valgrind --tool=cachegrind ./exec_2
+==8393== Cachegrind, a cache and branch-prediction profiler
+==8393== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==8393== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==8393== Command: ./exec_2
+==8393== 
+--8393-- warning: L3 cache found, using its data for the LL simulation.
+100
+==8393== 
+==8393== I   refs:      2,226,868
+==8393== I1  misses:        1,642
+==8393== LLi misses:        1,562
+==8393== I1  miss rate:      0.07%
+==8393== LLi miss rate:      0.07%
+==8393== 
+==8393== D   refs:        750,750  (548,157 rd   + 202,593 wr)
+==8393== D1  misses:       17,480  ( 13,934 rd   +   3,546 wr)
+==8393== LLd misses:       10,509  (  7,780 rd   +   2,729 wr)
+==8393== D1  miss rate:       2.3% (    2.5%     +     1.8%  )
+==8393== LLd miss rate:       1.4% (    1.4%     +     1.3%  )
+==8393== 
+==8393== LL refs:          19,122  ( 15,576 rd   +   3,546 wr)
+==8393== LL misses:        12,071  (  9,342 rd   +   2,729 wr)
+==8393== LL miss rate:        0.4% (    0.3%     +     1.3%  )
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_1 $ valgrind --tool=cachegrind ./exec_2
+==8403== Cachegrind, a cache and branch-prediction profiler
+==8403== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==8403== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==8403== Command: ./exec_2
+==8403== 
+--8403-- warning: L3 cache found, using its data for the LL simulation.
+300
+==8403== 
+==8403== I   refs:      3,022,856
+==8403== I1  misses:        1,663
+==8403== LLi misses:        1,565
+==8403== I1  miss rate:      0.06%
+==8403== LLi miss rate:      0.05%
+==8403== 
+==8403== D   refs:      2,216,433  (1,283,954 rd   + 932,479 wr)
+==8403== D1  misses:       28,048  (   14,325 rd   +  13,723 wr)
+==8403== LLd misses:       20,659  (    7,780 rd   +  12,879 wr)
+==8403== D1  miss rate:       1.3% (      1.1%     +     1.5%  )
+==8403== LLd miss rate:       0.9% (      0.6%     +     1.4%  )
+==8403== 
+==8403== LL refs:          29,711  (   15,988 rd   +  13,723 wr)
+==8403== LL misses:        22,224  (    9,345 rd   +  12,879 wr)
+==8403== LL miss rate:        0.4% (      0.2%     +     1.4%  )
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_1 $ valgrind --tool=cachegrind ./exec_2
+==8413== Cachegrind, a cache and branch-prediction profiler
+==8413== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==8413== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==8413== Command: ./exec_2
+==8413== 
+--8413-- warning: L3 cache found, using its data for the LL simulation.
+500
+==8413== 
+==8413== I   refs:      4,402,569
+==8413== I1  misses:        1,664
+==8413== LLi misses:        1,573
+==8413== I1  miss rate:      0.04%
+==8413== LLi miss rate:      0.04%
+==8413== 
+==8413== D   refs:      4,817,193  (2,588,073 rd   + 2,229,120 wr)
+==8413== D1  misses:       48,615  (   14,700 rd   +    33,915 wr)
+==8413== LLd misses:       40,810  (    7,781 rd   +    33,029 wr)
+==8413== D1  miss rate:       1.0% (      0.6%     +       1.5%  )
+==8413== LLd miss rate:       0.8% (      0.3%     +       1.5%  )
+==8413== 
+==8413== LL refs:          50,279  (   16,364 rd   +    33,915 wr)
+==8413== LL misses:        42,383  (    9,354 rd   +    33,029 wr)
+==8413== LL miss rate:        0.5% (      0.1%     +       1.5%  )
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_1 $ valgrind --tool=cachegrind ./exec_2
+==8422== Cachegrind, a cache and branch-prediction profiler
+==8422== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==8422== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==8422== Command: ./exec_2
+==8422== 
+--8422-- warning: L3 cache found, using its data for the LL simulation.
+700
+==8422== 
+==8422== I   refs:      6,392,204
+==8422== I1  misses:        1,664
+==8422== LLi misses:        1,597
+==8422== I1  miss rate:      0.03%
+==8422== LLi miss rate:      0.02%
+==8422== 
+==8422== D   refs:      8,680,132  (4,521,029 rd   + 4,159,103 wr)
+==8422== D1  misses:       79,228  (   15,106 rd   +    64,122 wr)
+==8422== LLd misses:       71,439  (    8,238 rd   +    63,201 wr)
+==8422== D1  miss rate:       0.9% (      0.3%     +       1.5%  )
+==8422== LLd miss rate:       0.8% (      0.2%     +       1.5%  )
+==8422== 
+==8422== LL refs:          80,892  (   16,770 rd   +    64,122 wr)
+==8422== LL misses:        73,036  (    9,835 rd   +    63,201 wr)
+==8422== LL miss rate:        0.5% (      0.1%     +       1.5%  )
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_1 $ valgrind --tool=cachegrind ./exec_2
+==8431== Cachegrind, a cache and branch-prediction profiler
+==8431== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==8431== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==8431== Command: ./exec_2
+==8431== 
+--8431-- warning: L3 cache found, using its data for the LL simulation.
+900
+==8431== 
+==8431== I   refs:      9,038,412
+==8431== I1  misses:        1,664
+==8431== LLi misses:        1,597
+==8431== I1  miss rate:      0.02%
+==8431== LLi miss rate:      0.02%
+==8431== 
+==8431== D   refs:      13,832,492  (7,099,921 rd   + 6,732,571 wr)
+==8431== D1  misses:      119,893  (   15,545 rd   +   104,348 wr)
+==8431== LLd misses:      112,023  (    8,672 rd   +   103,351 wr)
+==8431== D1  miss rate:       0.9% (      0.2%     +       1.5%  )
+==8431== LLd miss rate:       0.8% (      0.1%     +       1.5%  )
+==8431== 
+==8431== LL refs:         121,557  (   17,209 rd   +   104,348 wr)
+==8431== LL misses:       113,620  (   10,269 rd   +   103,351 wr)
+==8431== LL miss rate:        0.5% (      0.1%     +       1.5%  )
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_1 $ valgrind --tool=cachegrind ./exec_2
+==8440== Cachegrind, a cache and branch-prediction profiler
+==8440== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==8440== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==8440== Command: ./exec_2
+==8440== 
+--8440-- warning: L3 cache found, using its data for the LL simulation.
+1100
+==8440== brk segment overflow in thread #1: can't grow to 0x4a2c000
+==8440== brk segment overflow in thread #1: can't grow to 0x4a2d000
+==8440== 
+==8440== I   refs:      12,391,952
+==8440== I1  misses:         1,678
+==8440== LLi misses:         1,611
+==8440== I1  miss rate:       0.01%
+==8440== LLi miss rate:       0.01%
+==8440== 
+==8440== D   refs:      20,301,332  (10,342,397 rd   + 9,958,935 wr)
+==8440== D1  misses:       170,506  (    15,945 rd   +   154,561 wr)
+==8440== LLd misses:       162,578  (     9,070 rd   +   153,508 wr)
+==8440== D1  miss rate:        0.8% (       0.2%     +       1.6%  )
+==8440== LLd miss rate:        0.8% (       0.1%     +       1.5%  )
+==8440== 
+==8440== LL refs:          172,184  (    17,623 rd   +   154,561 wr)
+==8440== LL misses:        164,189  (    10,681 rd   +   153,508 wr)
+==8440== LL miss rate:         0.5% (       0.0%     +       1.5%  )
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_1 $ g++ main_2.cpp -g -o exec_2
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_1 $ valgrind --tool=cachegrind ./exec_2
+==8485== Cachegrind, a cache and branch-prediction profiler
+==8485== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==8485== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==8485== Command: ./exec_2
+==8485== 
+--8485-- warning: L3 cache found, using its data for the LL simulation.
+1100
+==8485== brk segment overflow in thread #1: can't grow to 0x4a2c000
+==8485== brk segment overflow in thread #1: can't grow to 0x4a2d000
+==8485== 
+==8485== I   refs:      91,863,605
+==8485== I1  misses:         1,753
+==8485== LLi misses:         1,682
+==8485== I1  miss rate:       0.00%
+==8485== LLi miss rate:       0.00%
+==8485== 
+==8485== D   refs:      68,043,213  (40,897,455 rd   + 27,145,758 wr)
+==8485== D1  misses:     1,834,917  ( 1,680,407 rd   +    154,510 wr)
+==8485== LLd misses:       305,036  (   151,514 rd   +    153,522 wr)
+==8485== D1  miss rate:        2.7% (       4.1%     +        0.6%  )
+==8485== LLd miss rate:        0.4% (       0.4%     +        0.6%  )
+==8485== 
+==8485== LL refs:        1,836,670  ( 1,682,160 rd   +    154,510 wr)
+==8485== LL misses:        306,718  (   153,196 rd   +    153,522 wr)
+==8485== LL miss rate:         0.2% (       0.1%     +        0.6%  )
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_1 $ g++ main.cpp -g -o exec
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_1 $ valgrind --tool=cachegrind ./exec
+==8498== Cachegrind, a cache and branch-prediction profiler
+==8498== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==8498== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==8498== Command: ./exec
+==8498== 
+--8498-- warning: L3 cache found, using its data for the LL simulation.
+1100
+==8498== brk segment overflow in thread #1: can't grow to 0x4a2c000
+==8498== brk segment overflow in thread #1: can't grow to 0x4a2d000
+==8498== 
+==8498== I   refs:      91,863,592
+==8498== I1  misses:         1,753
+==8498== LLi misses:         1,682
+==8498== I1  miss rate:       0.00%
+==8498== LLi miss rate:       0.00%
+==8498== 
+==8498== D   refs:      68,043,211  (40,897,454 rd   + 27,145,757 wr)
+==8498== D1  misses:       322,423  (   167,914 rd   +    154,509 wr)
+==8498== LLd misses:       314,606  (   161,085 rd   +    153,521 wr)
+==8498== D1  miss rate:        0.5% (       0.4%     +        0.6%  )
+==8498== LLd miss rate:        0.5% (       0.4%     +        0.6%  )
+==8498== 
+==8498== LL refs:          324,176  (   169,667 rd   +    154,509 wr)
+==8498== LL misses:        316,288  (   162,767 rd   +    153,521 wr)
+==8498== LL miss rate:         0.2% (       0.1%     +        0.6%  )
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_1 $ valgrind --tool=cachegrind ./exec_2
+==8503== Cachegrind, a cache and branch-prediction profiler
+==8503== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==8503== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==8503== Command: ./exec_2
+==8503== 
+--8503-- warning: L3 cache found, using its data for the LL simulation.
+1100
+==8503== brk segment overflow in thread #1: can't grow to 0x4a2c000
+==8503== brk segment overflow in thread #1: can't grow to 0x4a2d000
+==8503== 
+==8503== I   refs:      91,863,605
+==8503== I1  misses:         1,753
+==8503== LLi misses:         1,682
+==8503== I1  miss rate:       0.00%
+==8503== LLi miss rate:       0.00%
+==8503== 
+==8503== D   refs:      68,043,213  (40,897,455 rd   + 27,145,758 wr)
+==8503== D1  misses:     1,834,917  ( 1,680,407 rd   +    154,510 wr)
+==8503== LLd misses:       305,036  (   151,514 rd   +    153,522 wr)
+==8503== D1  miss rate:        2.7% (       4.1%     +        0.6%  )
+==8503== LLd miss rate:        0.4% (       0.4%     +        0.6%  )
+==8503== 
+==8503== LL refs:        1,836,670  ( 1,682,160 rd   +    154,510 wr)
+==8503== LL misses:        306,718  (   153,196 rd   +    153,522 wr)
+==8503== LL miss rate:         0.2% (       0.1%     +        0.6%  )
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_1 $ valgrind --tool=cachegrind ./exec
+==8533== Cachegrind, a cache and branch-prediction profiler
+==8533== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==8533== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==8533== Command: ./exec
+==8533== 
+--8533-- warning: L3 cache found, using its data for the LL simulation.
+100
+==8533== 
+==8533== I   refs:      2,952,508
+==8533== I1  misses:        1,716
+==8533== LLi misses:        1,632
+==8533== I1  miss rate:      0.06%
+==8533== LLi miss rate:      0.06%
+==8533== 
+==8533== D   refs:      1,191,629  (826,214 rd   + 365,415 wr)
+==8533== D1  misses:       18,855  ( 15,291 rd   +   3,564 wr)
+==8533== LLd misses:       10,508  (  7,779 rd   +   2,729 wr)
+==8533== D1  miss rate:       1.6% (    1.9%     +     1.0%  )
+==8533== LLd miss rate:       0.9% (    0.9%     +     0.7%  )
+==8533== 
+==8533== LL refs:          20,571  ( 17,007 rd   +   3,564 wr)
+==8533== LL misses:        12,140  (  9,411 rd   +   2,729 wr)
+==8533== LL miss rate:        0.3% (    0.2%     +     0.7%  )
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_1 $ valgrind --tool=cachegrind ./exec_2
+==8553== Cachegrind, a cache and branch-prediction profiler
+==8553== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==8553== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==8553== Command: ./exec_2
+==8553== 
+--8553-- warning: L3 cache found, using its data for the LL simulation.
+100
+==8553== 
+==8553== I   refs:      2,952,521
+==8553== I1  misses:        1,716
+==8553== LLi misses:        1,632
+==8553== I1  miss rate:      0.06%
+==8553== LLi miss rate:      0.06%
+==8553== 
+==8553== D   refs:      1,191,631  (826,215 rd   + 365,416 wr)
+==8553== D1  misses:       18,807  ( 15,243 rd   +   3,564 wr)
+==8553== LLd misses:       10,506  (  7,777 rd   +   2,729 wr)
+==8553== D1  miss rate:       1.6% (    1.8%     +     1.0%  )
+==8553== LLd miss rate:       0.9% (    0.9%     +     0.7%  )
+==8553== 
+==8553== LL refs:          20,523  ( 16,959 rd   +   3,564 wr)
+==8553== LL misses:        12,138  (  9,409 rd   +   2,729 wr)
+==8553== LL miss rate:        0.3% (    0.2%     +     0.7%  )
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_1 $ 
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_1 $ valgrind --tool=cachegrind ./exec
+==8557== Cachegrind, a cache and branch-prediction profiler
+==8557== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==8557== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==8557== Command: ./exec
+==8557== 
+--8557-- warning: L3 cache found, using its data for the LL simulation.
+200
+==8557== 
+==8557== I   refs:      5,044,468
+==8557== I1  misses:        1,740
+==8557== LLi misses:        1,637
+==8557== I1  miss rate:      0.03%
+==8557== LLi miss rate:      0.03%
+==8557== 
+==8557== D   refs:      2,444,068  (1,621,545 rd   + 822,523 wr)
+==8557== D1  misses:       26,687  (   19,291 rd   +   7,396 wr)
+==8557== LLd misses:       14,333  (    7,779 rd   +   6,554 wr)
+==8557== D1  miss rate:       1.1% (      1.2%     +     0.9%  )
+==8557== LLd miss rate:       0.6% (      0.5%     +     0.8%  )
+==8557== 
+==8557== LL refs:          28,427  (   21,031 rd   +   7,396 wr)
+==8557== LL misses:        15,970  (    9,416 rd   +   6,554 wr)
+==8557== LL miss rate:        0.2% (      0.1%     +     0.8%  )
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_1 $ valgrind --tool=cachegrind ./exec_2
+==8561== Cachegrind, a cache and branch-prediction profiler
+==8561== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==8561== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==8561== Command: ./exec_2
+==8561== 
+--8561-- warning: L3 cache found, using its data for the LL simulation.
+200
+==8561== 
+==8561== I   refs:      5,044,481
+==8561== I1  misses:        1,740
+==8561== LLi misses:        1,637
+==8561== I1  miss rate:      0.03%
+==8561== LLi miss rate:      0.03%
+==8561== 
+==8561== D   refs:      2,444,070  (1,621,546 rd   + 822,524 wr)
+==8561== D1  misses:       26,587  (   19,190 rd   +   7,397 wr)
+==8561== LLd misses:       14,331  (    7,777 rd   +   6,554 wr)
+==8561== D1  miss rate:       1.1% (      1.2%     +     0.9%  )
+==8561== LLd miss rate:       0.6% (      0.5%     +     0.8%  )
+==8561== 
+==8561== LL refs:          28,327  (   20,930 rd   +   7,397 wr)
+==8561== LL misses:        15,968  (    9,414 rd   +   6,554 wr)
+==8561== LL miss rate:        0.2% (      0.1%     +     0.8%  )
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_1 $ valgrind --tool=cachegrind ./exec
+==8565== Cachegrind, a cache and branch-prediction profiler
+==8565== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==8565== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==8565== Command: ./exec
+==8565== 
+--8565-- warning: L3 cache found, using its data for the LL simulation.
+300
+==8565== 
+==8565== I   refs:      9,097,696
+==8565== I1  misses:        1,738
+==8565== LLi misses:        1,635
+==8565== I1  miss rate:      0.02%
+==8565== LLi miss rate:      0.02%
+==8565== 
+==8565== D   refs:      5,877,512  (3,617,411 rd   + 2,260,101 wr)
+==8565== D1  misses:       39,509  (   25,779 rd   +    13,730 wr)
+==8565== LLd misses:       20,658  (    7,779 rd   +    12,879 wr)
+==8565== D1  miss rate:       0.7% (      0.7%     +       0.6%  )
+==8565== LLd miss rate:       0.4% (      0.2%     +       0.6%  )
+==8565== 
+==8565== LL refs:          41,247  (   27,517 rd   +    13,730 wr)
+==8565== LL misses:        22,293  (    9,414 rd   +    12,879 wr)
+==8565== LL miss rate:        0.1% (      0.1%     +       0.6%  )
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_1 $ valgrind --tool=cachegrind ./exec
+==8570== Cachegrind, a cache and branch-prediction profiler
+==8570== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==8570== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==8570== Command: ./exec
+==8570== 
+--8570-- warning: L3 cache found, using its data for the LL simulation.
+1000
+==8570== 
+==8570== I   refs:      76,349,251
+==8570== I1  misses:         1,739
+==8570== LLi misses:         1,668
+==8570== I1  miss rate:       0.00%
+==8570== LLi miss rate:       0.00%
+==8570== 
+==8570== D   refs:      56,390,753  (33,906,924 rd   + 22,483,829 wr)
+==8570== D1  misses:       269,590  (   141,424 rd   +    128,166 wr)
+==8570== LLd misses:       261,767  (   134,578 rd   +    127,189 wr)
+==8570== D1  miss rate:        0.5% (       0.4%     +        0.6%  )
+==8570== LLd miss rate:        0.5% (       0.4%     +        0.6%  )
+==8570== 
+==8570== LL refs:          271,329  (   143,163 rd   +    128,166 wr)
+==8570== LL misses:        263,435  (   136,246 rd   +    127,189 wr)
+==8570== LL miss rate:         0.2% (       0.1%     +        0.6%  )
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_1 $ g++ main.cpp -g -o exec
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_1 $ g++ main_2.cpp -g -o exec_2
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_1 $ valgrind --tool=cachegrind ./exec
+==8599== Cachegrind, a cache and branch-prediction profiler
+==8599== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==8599== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==8599== Command: ./exec
+==8599== 
+--8599-- warning: L3 cache found, using its data for the LL simulation.
+1000
+==8599== 
+==8599== I   refs:      76,349,251
+==8599== I1  misses:         1,739
+==8599== LLi misses:         1,668
+==8599== I1  miss rate:       0.00%
+==8599== LLi miss rate:       0.00%
+==8599== 
+==8599== D   refs:      56,390,753  (33,906,924 rd   + 22,483,829 wr)
+==8599== D1  misses:       269,590  (   141,424 rd   +    128,166 wr)
+==8599== LLd misses:       261,767  (   134,578 rd   +    127,189 wr)
+==8599== D1  miss rate:        0.5% (       0.4%     +        0.6%  )
+==8599== LLd miss rate:        0.5% (       0.4%     +        0.6%  )
+==8599== 
+==8599== LL refs:          271,329  (   143,163 rd   +    128,166 wr)
+==8599== LL misses:        263,435  (   136,246 rd   +    127,189 wr)
+==8599== LL miss rate:         0.2% (       0.1%     +        0.6%  )
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_1 $ valgrind --tool=cachegrind ./exec_2
+==8603== Cachegrind, a cache and branch-prediction profiler
+==8603== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==8603== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==8603== Command: ./exec_2
+==8603== 
+--8603-- warning: L3 cache found, using its data for the LL simulation.
+1000
+==8603== 
+==8603== I   refs:      76,349,264
+==8603== I1  misses:         1,739
+==8603== LLi misses:         1,668
+==8603== I1  miss rate:       0.00%
+==8603== LLi miss rate:       0.00%
+==8603== 
+==8603== D   refs:      56,390,755  (33,906,925 rd   + 22,483,830 wr)
+==8603== D1  misses:     1,519,087  ( 1,390,920 rd   +    128,167 wr)
+==8603== LLd misses:       250,818  (   123,628 rd   +    127,190 wr)
+==8603== D1  miss rate:        2.7% (       4.1%     +        0.6%  )
+==8603== LLd miss rate:        0.4% (       0.4%     +        0.6%  )
+==8603== 
+==8603== LL refs:        1,520,826  ( 1,392,659 rd   +    128,167 wr)
+==8603== LL misses:        252,486  (   125,296 rd   +    127,190 wr)
+==8603== LL miss rate:         0.2% (       0.1%     +        0.6%  )
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_1 $ valgrind --tool=cachegrind ./exec
+==8607== Cachegrind, a cache and branch-prediction profiler
+==8607== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==8607== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==8607== Command: ./exec
+==8607== 
+--8607-- warning: L3 cache found, using its data for the LL simulation.
+900
+==8607== 
+==8607== I   refs:      62,360,852
+==8607== I1  misses:         1,739
+==8607== LLi misses:         1,668
+==8607== I1  miss rate:       0.00%
+==8607== LLi miss rate:       0.00%
+==8607== 
+==8607== D   refs:      45,874,171  (27,599,578 rd   + 18,274,593 wr)
+==8607== D1  misses:       221,674  (   117,367 rd   +    104,307 wr)
+==8607== LLd misses:       213,920  (   110,557 rd   +    103,363 wr)
+==8607== D1  miss rate:        0.5% (       0.4%     +        0.6%  )
+==8607== LLd miss rate:        0.5% (       0.4%     +        0.6%  )
+==8607== 
+==8607== LL refs:          223,413  (   119,106 rd   +    104,307 wr)
+==8607== LL misses:        215,588  (   112,225 rd   +    103,363 wr)
+==8607== LL miss rate:         0.2% (       0.1%     +        0.6%  )
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_1 $ valgrind --tool=cachegrind ./exec_2
+==8611== Cachegrind, a cache and branch-prediction profiler
+==8611== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==8611== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==8611== Command: ./exec_2
+==8611== 
+--8611-- warning: L3 cache found, using its data for the LL simulation.
+900
+==8611== 
+==8611== I   refs:      62,360,865
+==8611== I1  misses:         1,739
+==8611== LLi misses:         1,668
+==8611== I1  miss rate:       0.00%
+==8611== LLi miss rate:       0.00%
+==8611== 
+==8611== D   refs:      45,874,173  (27,599,579 rd   + 18,274,594 wr)
+==8611== D1  misses:     1,234,169  ( 1,129,861 rd   +    104,308 wr)
+==8611== LLd misses:       193,575  (    90,211 rd   +    103,364 wr)
+==8611== D1  miss rate:        2.7% (       4.1%     +        0.6%  )
+==8611== LLd miss rate:        0.4% (       0.3%     +        0.6%  )
+==8611== 
+==8611== LL refs:        1,235,908  ( 1,131,600 rd   +    104,308 wr)
+==8611== LL misses:        195,243  (    91,879 rd   +    103,364 wr)
+==8611== LL miss rate:         0.2% (       0.1%     +        0.6%  )
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_1 $ valgrind --tool=cachegrind ./exec
+==8615== Cachegrind, a cache and branch-prediction profiler
+==8615== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==8615== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==8615== Command: ./exec
+==8615== 
+--8615-- warning: L3 cache found, using its data for the LL simulation.
+800
+==8615== 
+==8615== I   refs:      49,859,185
+==8615== I1  misses:         1,739
+==8615== LLi misses:         1,668
+==8615== I1  miss rate:       0.00%
+==8615== LLi miss rate:       0.00%
+==8615== 
+==8615== D   refs:      36,472,882  (21,961,900 rd   + 14,510,982 wr)
+==8615== D1  misses:       178,785  (    95,832 rd   +     82,953 wr)
+==8615== LLd misses:       171,092  (    89,054 rd   +     82,038 wr)
+==8615== D1  miss rate:        0.5% (       0.4%     +        0.6%  )
+==8615== LLd miss rate:        0.5% (       0.4%     +        0.6%  )
+==8615== 
+==8615== LL refs:          180,524  (    97,571 rd   +     82,953 wr)
+==8615== LL misses:        172,760  (    90,722 rd   +     82,038 wr)
+==8615== LL miss rate:         0.2% (       0.1%     +        0.6%  )
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_1 $ valgrind --tool=cachegrind ./exec_2
+==8619== Cachegrind, a cache and branch-prediction profiler
+==8619== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==8619== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==8619== Command: ./exec_2
+==8619== 
+--8619-- warning: L3 cache found, using its data for the LL simulation.
+800
+==8619== 
+==8619== I   refs:      49,859,198
+==8619== I1  misses:         1,739
+==8619== LLi misses:         1,668
+==8619== I1  miss rate:       0.00%
+==8619== LLi miss rate:       0.00%
+==8619== 
+==8619== D   refs:      36,472,884  (21,961,901 rd   + 14,510,983 wr)
+==8619== D1  misses:       978,382  (   895,428 rd   +     82,954 wr)
+==8619== LLd misses:       151,339  (    69,300 rd   +     82,039 wr)
+==8619== D1  miss rate:        2.7% (       4.1%     +        0.6%  )
+==8619== LLd miss rate:        0.4% (       0.3%     +        0.6%  )
+==8619== 
+==8619== LL refs:          980,121  (   897,167 rd   +     82,954 wr)
+==8619== LL misses:        153,007  (    70,968 rd   +     82,039 wr)
+==8619== LL miss rate:         0.2% (       0.1%     +        0.6%  )
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_1 $ valgrind --tool=cachegrind ./exec
+==8623== Cachegrind, a cache and branch-prediction profiler
+==8623== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==8623== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==8623== Command: ./exec
+==8623== 
+--8623-- warning: L3 cache found, using its data for the LL simulation.
+700
+==8623== 
+==8623== I   refs:      38,765,444
+==8623== I1  misses:         1,739
+==8623== LLi misses:         1,668
+==8623== I1  miss rate:       0.00%
+==8623== LLi miss rate:       0.00%
+==8623== 
+==8623== D   refs:      28,141,611  (16,965,286 rd   + 11,176,325 wr)
+==8623== D1  misses:       140,900  (    76,800 rd   +     64,100 wr)
+==8623== LLd misses:       133,213  (    70,000 rd   +     63,213 wr)
+==8623== D1  miss rate:        0.5% (       0.5%     +        0.6%  )
+==8623== LLd miss rate:        0.5% (       0.4%     +        0.6%  )
+==8623== 
+==8623== LL refs:          142,639  (    78,539 rd   +     64,100 wr)
+==8623== LL misses:        134,881  (    71,668 rd   +     63,213 wr)
+==8623== LL miss rate:         0.2% (       0.1%     +        0.6%  )
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_1 $ valgrind --tool=cachegrind ./exec_2
+==8627== Cachegrind, a cache and branch-prediction profiler
+==8627== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==8627== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==8627== Command: ./exec_2
+==8627== 
+--8627-- warning: L3 cache found, using its data for the LL simulation.
+700
+==8627== 
+==8627== I   refs:      38,765,457
+==8627== I1  misses:         1,739
+==8627== LLi misses:         1,668
+==8627== I1  miss rate:       0.00%
+==8627== LLi miss rate:       0.00%
+==8627== 
+==8627== D   refs:      28,141,613  (16,965,287 rd   + 11,176,326 wr)
+==8627== D1  misses:       753,395  (   689,294 rd   +     64,101 wr)
+==8627== LLd misses:       106,065  (    42,851 rd   +     63,214 wr)
+==8627== D1  miss rate:        2.7% (       4.1%     +        0.6%  )
+==8627== LLd miss rate:        0.4% (       0.3%     +        0.6%  )
+==8627== 
+==8627== LL refs:          755,134  (   691,033 rd   +     64,101 wr)
+==8627== LL misses:        107,733  (    44,519 rd   +     63,214 wr)
+==8627== LL miss rate:         0.2% (       0.1%     +        0.6%  )
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_1 $ valgrind --tool=cachegrind g++ main.cpp -g -o exe
+==8647== Cachegrind, a cache and branch-prediction profiler
+==8647== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==8647== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==8647== Command: g++ main.cpp -g -o exe
+==8647== 
+--8647-- warning: L3 cache found, using its data for the LL simulation.
+==8647== 
+==8647== I   refs:      1,561,806
+==8647== I1  misses:        3,616
+==8647== LLi misses:        2,630
+==8647== I1  miss rate:      0.23%
+==8647== LLi miss rate:      0.17%
+==8647== 
+==8647== D   refs:        398,397  (292,647 rd   + 105,750 wr)
+==8647== D1  misses:        6,767  (  4,792 rd   +   1,975 wr)
+==8647== LLd misses:        4,700  (  3,015 rd   +   1,685 wr)
+==8647== D1  miss rate:       1.7% (    1.6%     +     1.9%  )
+==8647== LLd miss rate:       1.2% (    1.0%     +     1.6%  )
+==8647== 
+==8647== LL refs:          10,383  (  8,408 rd   +   1,975 wr)
+==8647== LL misses:         7,330  (  5,645 rd   +   1,685 wr)
+==8647== LL miss rate:        0.4% (    0.3%     +     1.6%  )
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_1 $ valgrind --tool=cachegrind g++ main_2.cpp -g -o exe
+==8655== Cachegrind, a cache and branch-prediction profiler
+==8655== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==8655== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==8655== Command: g++ main_2.cpp -g -o exe
+==8655== 
+--8655-- warning: L3 cache found, using its data for the LL simulation.
+==8655== 
+==8655== I   refs:      1,562,043
+==8655== I1  misses:        3,632
+==8655== LLi misses:        2,632
+==8655== I1  miss rate:      0.23%
+==8655== LLi miss rate:      0.17%
+==8655== 
+==8655== D   refs:        398,426  (292,665 rd   + 105,761 wr)
+==8655== D1  misses:        6,776  (  4,800 rd   +   1,976 wr)
+==8655== LLd misses:        4,700  (  3,015 rd   +   1,685 wr)
+==8655== D1  miss rate:       1.7% (    1.6%     +     1.9%  )
+==8655== LLd miss rate:       1.2% (    1.0%     +     1.6%  )
+==8655== 
+==8655== LL refs:          10,408  (  8,432 rd   +   1,976 wr)
+==8655== LL misses:         7,332  (  5,647 rd   +   1,685 wr)
+==8655== LL miss rate:        0.4% (    0.3%     +     1.6%  )
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_1 $ valgrind --tool=cachegrind exe | g++ main_2.cpp -g -o exe
+valgrind: exe: command not found
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_1 $ g++ main.cpp -g -o exe | valgrind --tool=cachegrind ./exe
+==8674== Cachegrind, a cache and branch-prediction profiler
+==8674== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==8674== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==8674== Command: ./exe
+==8674== 
+--8674-- warning: L3 cache found, using its data for the LL simulation.
+==8674== 
+==8674== I   refs:      2,170,152
+==8674== I1  misses:        1,610
+==8674== LLi misses:        1,539
+==8674== I1  miss rate:      0.07%
+==8674== LLi miss rate:      0.07%
+==8674== 
+==8674== D   refs:        726,998  (534,594 rd   + 192,404 wr)
+==8674== D1  misses:       15,822  ( 13,620 rd   +   2,202 wr)
+==8674== LLd misses:        9,170  (  7,767 rd   +   1,403 wr)
+==8674== D1  miss rate:       2.2% (    2.5%     +     1.1%  )
+==8674== LLd miss rate:       1.3% (    1.5%     +     0.7%  )
+==8674== 
+==8674== LL refs:          17,432  ( 15,230 rd   +   2,202 wr)
+==8674== LL misses:        10,709  (  9,306 rd   +   1,403 wr)
+==8674== LL miss rate:        0.4% (    0.3%     +     0.7%  )
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_1 $ g++ main.cpp -g -o exe | valgrind --tool=cachegrind ./exe
+valgrind: ./exe: No such file or directory
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_1 $ valgrind --tool=cachegrind ./exec | g++ main.cpp -g -o exec
+valgrind: ./exec: No such file or directory
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_1 $ g++ main.cpp -g -o exec || valgrind --tool=cachegrind ./exec
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_1 $ g++ main.cpp -g -o exec || valgrind --tool=cachegrind ./exec
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_1 $ g++ main.cpp -g -o exec | valgrind --tool=cachegrind ./exec
+valgrind: ./exec: No such file or directory
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_1 $ g++ main.cpp -g -o exec && valgrind --tool=cachegrind ./exec
+==8784== Cachegrind, a cache and branch-prediction profiler
+==8784== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==8784== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==8784== Command: ./exec
+==8784== 
+--8784-- warning: L3 cache found, using its data for the LL simulation.
+1000
+==8784== 
+==8784== I   refs:      76,349,251
+==8784== I1  misses:         1,739
+==8784== LLi misses:         1,668
+==8784== I1  miss rate:       0.00%
+==8784== LLi miss rate:       0.00%
+==8784== 
+==8784== D   refs:      56,390,753  (33,906,924 rd   + 22,483,829 wr)
+==8784== D1  misses:       269,590  (   141,424 rd   +    128,166 wr)
+==8784== LLd misses:       261,767  (   134,578 rd   +    127,189 wr)
+==8784== D1  miss rate:        0.5% (       0.4%     +        0.6%  )
+==8784== LLd miss rate:        0.5% (       0.4%     +        0.6%  )
+==8784== 
+==8784== LL refs:          271,329  (   143,163 rd   +    128,166 wr)
+==8784== LL misses:        263,435  (   136,246 rd   +    127,189 wr)
+==8784== LL miss rate:         0.2% (       0.1%     +        0.6%  )
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_1 $ g++ main.cpp -g -o exec && valgrind --tool=cachegrind ./exec
+==8794== Cachegrind, a cache and branch-prediction profiler
+==8794== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==8794== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==8794== Command: ./exec
+==8794== 
+--8794-- warning: L3 cache found, using its data for the LL simulation.
+100
+==8794== 
+==8794== I   refs:      2,952,508
+==8794== I1  misses:        1,716
+==8794== LLi misses:        1,632
+==8794== I1  miss rate:      0.06%
+==8794== LLi miss rate:      0.06%
+==8794== 
+==8794== D   refs:      1,191,629  (826,214 rd   + 365,415 wr)
+==8794== D1  misses:       18,855  ( 15,291 rd   +   3,564 wr)
+==8794== LLd misses:       10,508  (  7,779 rd   +   2,729 wr)
+==8794== D1  miss rate:       1.6% (    1.9%     +     1.0%  )
+==8794== LLd miss rate:       0.9% (    0.9%     +     0.7%  )
+==8794== 
+==8794== LL refs:          20,571  ( 17,007 rd   +   3,564 wr)
+==8794== LL misses:        12,140  (  9,411 rd   +   2,729 wr)
+==8794== LL miss rate:        0.3% (    0.2%     +     0.7%  )
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_1 $ g++ main_2.cpp -g -o exec_2 && valgrind --tool=cachegrind ./exec_2
+==8816== Cachegrind, a cache and branch-prediction profiler
+==8816== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==8816== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==8816== Command: ./exec_2
+==8816== 
+--8816-- warning: L3 cache found, using its data for the LL simulation.
+1000
+==8816== 
+==8816== I   refs:      76,349,264
+==8816== I1  misses:         1,739
+==8816== LLi misses:         1,668
+==8816== I1  miss rate:       0.00%
+==8816== LLi miss rate:       0.00%
+==8816== 
+==8816== D   refs:      56,390,755  (33,906,925 rd   + 22,483,830 wr)
+==8816== D1  misses:     1,519,087  ( 1,390,920 rd   +    128,167 wr)
+==8816== LLd misses:       250,818  (   123,628 rd   +    127,190 wr)
+==8816== D1  miss rate:        2.7% (       4.1%     +        0.6%  )
+==8816== LLd miss rate:        0.4% (       0.4%     +        0.6%  )
+==8816== 
+==8816== LL refs:        1,520,826  ( 1,392,659 rd   +    128,167 wr)
+==8816== LL misses:        252,486  (   125,296 rd   +    127,190 wr)
+==8816== LL miss rate:         0.2% (       0.1%     +        0.6%  )
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_1 $ g++ main.cpp -g -o exec && valgrind --tool=cachegrind ./exec
+==8829== Cachegrind, a cache and branch-prediction profiler
+==8829== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==8829== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==8829== Command: ./exec
+==8829== 
+--8829-- warning: L3 cache found, using its data for the LL simulation.
+100
+==8829== 
+==8829== I   refs:      2,952,508
+==8829== I1  misses:        1,716
+==8829== LLi misses:        1,632
+==8829== I1  miss rate:      0.06%
+==8829== LLi miss rate:      0.06%
+==8829== 
+==8829== D   refs:      1,191,629  (826,214 rd   + 365,415 wr)
+==8829== D1  misses:       18,855  ( 15,291 rd   +   3,564 wr)
+==8829== LLd misses:       10,508  (  7,779 rd   +   2,729 wr)
+==8829== D1  miss rate:       1.6% (    1.9%     +     1.0%  )
+==8829== LLd miss rate:       0.9% (    0.9%     +     0.7%  )
+==8829== 
+==8829== LL refs:          20,571  ( 17,007 rd   +   3,564 wr)
+==8829== LL misses:        12,140  (  9,411 rd   +   2,729 wr)
+==8829== LL miss rate:        0.3% (    0.2%     +     0.7%  )
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_1 $ g++ main_2.cpp -g -o exec_2 && valgrind --tool=cachegrind ./exec_2
+==8841== Cachegrind, a cache and branch-prediction profiler
+==8841== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==8841== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==8841== Command: ./exec_2
+==8841== 
+--8841-- warning: L3 cache found, using its data for the LL simulation.
+100
+==8841== 
+==8841== I   refs:      2,952,521
+==8841== I1  misses:        1,716
+==8841== LLi misses:        1,632
+==8841== I1  miss rate:      0.06%
+==8841== LLi miss rate:      0.06%
+==8841== 
+==8841== D   refs:      1,191,631  (826,215 rd   + 365,416 wr)
+==8841== D1  misses:       18,807  ( 15,243 rd   +   3,564 wr)
+==8841== LLd misses:       10,506  (  7,777 rd   +   2,729 wr)
+==8841== D1  miss rate:       1.6% (    1.8%     +     1.0%  )
+==8841== LLd miss rate:       0.9% (    0.9%     +     0.7%  )
+==8841== 
+==8841== LL refs:          20,523  ( 16,959 rd   +   3,564 wr)
+==8841== LL misses:        12,138  (  9,409 rd   +   2,729 wr)
+==8841== LL miss rate:        0.3% (    0.2%     +     0.7%  )
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_1 $ g++ main.cpp -g -o exec && valgrind --tool=cachegrind ./exec
+==8853== Cachegrind, a cache and branch-prediction profiler
+==8853== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==8853== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==8853== Command: ./exec
+==8853== 
+--8853-- warning: L3 cache found, using its data for the LL simulation.
+200
+==8853== 
+==8853== I   refs:      5,044,468
+==8853== I1  misses:        1,740
+==8853== LLi misses:        1,637
+==8853== I1  miss rate:      0.03%
+==8853== LLi miss rate:      0.03%
+==8853== 
+==8853== D   refs:      2,444,068  (1,621,545 rd   + 822,523 wr)
+==8853== D1  misses:       26,687  (   19,291 rd   +   7,396 wr)
+==8853== LLd misses:       14,333  (    7,779 rd   +   6,554 wr)
+==8853== D1  miss rate:       1.1% (      1.2%     +     0.9%  )
+==8853== LLd miss rate:       0.6% (      0.5%     +     0.8%  )
+==8853== 
+==8853== LL refs:          28,427  (   21,031 rd   +   7,396 wr)
+==8853== LL misses:        15,970  (    9,416 rd   +   6,554 wr)
+==8853== LL miss rate:        0.2% (      0.1%     +     0.8%  )
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_1 $ g++ main_2.cpp -g -o exec_2 && valgrind --tool=cachegrind ./exec_2
+==8865== Cachegrind, a cache and branch-prediction profiler
+==8865== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==8865== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==8865== Command: ./exec_2
+==8865== 
+--8865-- warning: L3 cache found, using its data for the LL simulation.
+200
+==8865== 
+==8865== I   refs:      5,044,481
+==8865== I1  misses:        1,740
+==8865== LLi misses:        1,637
+==8865== I1  miss rate:      0.03%
+==8865== LLi miss rate:      0.03%
+==8865== 
+==8865== D   refs:      2,444,070  (1,621,546 rd   + 822,524 wr)
+==8865== D1  misses:       26,587  (   19,190 rd   +   7,397 wr)
+==8865== LLd misses:       14,331  (    7,777 rd   +   6,554 wr)
+==8865== D1  miss rate:       1.1% (      1.2%     +     0.9%  )
+==8865== LLd miss rate:       0.6% (      0.5%     +     0.8%  )
+==8865== 
+==8865== LL refs:          28,327  (   20,930 rd   +   7,397 wr)
+==8865== LL misses:        15,968  (    9,414 rd   +   6,554 wr)
+==8865== LL miss rate:        0.2% (      0.1%     +     0.8%  )
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_1 $ g++ main.cpp -g -o exec && valgrind --tool=cachegrind ./exec
+==8877== Cachegrind, a cache and branch-prediction profiler
+==8877== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==8877== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==8877== Command: ./exec
+==8877== 
+--8877-- warning: L3 cache found, using its data for the LL simulation.
+1000
+==8877== 
+==8877== I   refs:      76,349,251
+==8877== I1  misses:         1,739
+==8877== LLi misses:         1,668
+==8877== I1  miss rate:       0.00%
+==8877== LLi miss rate:       0.00%
+==8877== 
+==8877== D   refs:      56,390,753  (33,906,924 rd   + 22,483,829 wr)
+==8877== D1  misses:       269,590  (   141,424 rd   +    128,166 wr)
+==8877== LLd misses:       261,767  (   134,578 rd   +    127,189 wr)
+==8877== D1  miss rate:        0.5% (       0.4%     +        0.6%  )
+==8877== LLd miss rate:        0.5% (       0.4%     +        0.6%  )
+==8877== 
+==8877== LL refs:          271,329  (   143,163 rd   +    128,166 wr)
+==8877== LL misses:        263,435  (   136,246 rd   +    127,189 wr)
+==8877== LL miss rate:         0.2% (       0.1%     +        0.6%  )
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_1 $ g++ main_2.cpp -g -o exec_2 && valgrind --tool=cachegrind ./exec_2
+==8890== Cachegrind, a cache and branch-prediction profiler
+==8890== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==8890== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==8890== Command: ./exec_2
+==8890== 
+--8890-- warning: L3 cache found, using its data for the LL simulation.
+1000
+==8890== 
+==8890== I   refs:      76,349,264
+==8890== I1  misses:         1,739
+==8890== LLi misses:         1,668
+==8890== I1  miss rate:       0.00%
+==8890== LLi miss rate:       0.00%
+==8890== 
+==8890== D   refs:      56,390,755  (33,906,925 rd   + 22,483,830 wr)
+==8890== D1  misses:     1,519,087  ( 1,390,920 rd   +    128,167 wr)
+==8890== LLd misses:       250,818  (   123,628 rd   +    127,190 wr)
+==8890== D1  miss rate:        2.7% (       4.1%     +        0.6%  )
+==8890== LLd miss rate:        0.4% (       0.4%     +        0.6%  )
+==8890== 
+==8890== LL refs:        1,520,826  ( 1,392,659 rd   +    128,167 wr)
+==8890== LL misses:        252,486  (   125,296 rd   +    127,190 wr)
+==8890== LL miss rate:         0.2% (       0.1%     +        0.6%  )
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_1 $ g++ main.cpp -g -o exec && valgrind --tool=cachegrind ./exec && rm exec
+==8903== Cachegrind, a cache and branch-prediction profiler
+==8903== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==8903== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==8903== Command: ./exec
+==8903== 
+--8903-- warning: L3 cache found, using its data for the LL simulation.
+1000
+==8903== 
+==8903== I   refs:      76,349,251
+==8903== I1  misses:         1,739
+==8903== LLi misses:         1,668
+==8903== I1  miss rate:       0.00%
+==8903== LLi miss rate:       0.00%
+==8903== 
+==8903== D   refs:      56,390,753  (33,906,924 rd   + 22,483,829 wr)
+==8903== D1  misses:       269,590  (   141,424 rd   +    128,166 wr)
+==8903== LLd misses:       261,767  (   134,578 rd   +    127,189 wr)
+==8903== D1  miss rate:        0.5% (       0.4%     +        0.6%  )
+==8903== LLd miss rate:        0.5% (       0.4%     +        0.6%  )
+==8903== 
+==8903== LL refs:          271,329  (   143,163 rd   +    128,166 wr)
+==8903== LL misses:        263,435  (   136,246 rd   +    127,189 wr)
+==8903== LL miss rate:         0.2% (       0.1%     +        0.6%  )
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_1 $ g++ main_2.cpp -g -o exec_2 && valgrind --tool=cachegrind ./exec_2 && rm exec_2
+==8936== Cachegrind, a cache and branch-prediction profiler
+==8936== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==8936== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==8936== Command: ./exec_2
+==8936== 
+--8936-- warning: L3 cache found, using its data for the LL simulation.
+1000
+==8936== 
+==8936== I   refs:      76,349,264
+==8936== I1  misses:         1,739
+==8936== LLi misses:         1,668
+==8936== I1  miss rate:       0.00%
+==8936== LLi miss rate:       0.00%
+==8936== 
+==8936== D   refs:      56,390,755  (33,906,925 rd   + 22,483,830 wr)
+==8936== D1  misses:     1,519,087  ( 1,390,920 rd   +    128,167 wr)
+==8936== LLd misses:       250,818  (   123,628 rd   +    127,190 wr)
+==8936== D1  miss rate:        2.7% (       4.1%     +        0.6%  )
+==8936== LLd miss rate:        0.4% (       0.4%     +        0.6%  )
+==8936== 
+==8936== LL refs:        1,520,826  ( 1,392,659 rd   +    128,167 wr)
+==8936== LL misses:        252,486  (   125,296 rd   +    127,190 wr)
+==8936== LL miss rate:         0.2% (       0.1%     +        0.6%  )
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_1 $ g++ main.cpp -g -o exec && valgrind --tool=cachegrind ./exec && rm exec
+==8951== Cachegrind, a cache and branch-prediction profiler
+==8951== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==8951== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==8951== Command: ./exec
+==8951== 
+--8951-- warning: L3 cache found, using its data for the LL simulation.
+300
+==8951== 
+==8951== I   refs:      9,097,696
+==8951== I1  misses:        1,738
+==8951== LLi misses:        1,635
+==8951== I1  miss rate:      0.02%
+==8951== LLi miss rate:      0.02%
+==8951== 
+==8951== D   refs:      5,877,512  (3,617,411 rd   + 2,260,101 wr)
+==8951== D1  misses:       39,509  (   25,779 rd   +    13,730 wr)
+==8951== LLd misses:       20,658  (    7,779 rd   +    12,879 wr)
+==8951== D1  miss rate:       0.7% (      0.7%     +       0.6%  )
+==8951== LLd miss rate:       0.4% (      0.2%     +       0.6%  )
+==8951== 
+==8951== LL refs:          41,247  (   27,517 rd   +    13,730 wr)
+==8951== LL misses:        22,293  (    9,414 rd   +    12,879 wr)
+==8951== LL miss rate:        0.1% (      0.1%     +       0.6%  )
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_1 $ g++ main.cpp -g -o exec && valgrind --tool=cachegrind ./exec && rm exec
+==8964== Cachegrind, a cache and branch-prediction profiler
+==8964== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==8964== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==8964== Command: ./exec
+==8964== 
+--8964-- warning: L3 cache found, using its data for the LL simulation.
+100
+==8964== 
+==8964== I   refs:      2,952,508
+==8964== I1  misses:        1,716
+==8964== LLi misses:        1,632
+==8964== I1  miss rate:      0.06%
+==8964== LLi miss rate:      0.06%
+==8964== 
+==8964== D   refs:      1,191,629  (826,214 rd   + 365,415 wr)
+==8964== D1  misses:       18,855  ( 15,291 rd   +   3,564 wr)
+==8964== LLd misses:       10,508  (  7,779 rd   +   2,729 wr)
+==8964== D1  miss rate:       1.6% (    1.9%     +     1.0%  )
+==8964== LLd miss rate:       0.9% (    0.9%     +     0.7%  )
+==8964== 
+==8964== LL refs:          20,571  ( 17,007 rd   +   3,564 wr)
+==8964== LL misses:        12,140  (  9,411 rd   +   2,729 wr)
+==8964== LL miss rate:        0.3% (    0.2%     +     0.7%  )
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_1 $ g++ main_2.cpp -g -o exec_2 && valgrind --tool=cachegrind ./exec_2 && rm exec_2
+==8977== Cachegrind, a cache and branch-prediction profiler
+==8977== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==8977== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==8977== Command: ./exec_2
+==8977== 
+--8977-- warning: L3 cache found, using its data for the LL simulation.
+100
+==8977== 
+==8977== I   refs:      2,952,521
+==8977== I1  misses:        1,716
+==8977== LLi misses:        1,632
+==8977== I1  miss rate:      0.06%
+==8977== LLi miss rate:      0.06%
+==8977== 
+==8977== D   refs:      1,191,631  (826,215 rd   + 365,416 wr)
+==8977== D1  misses:       18,807  ( 15,243 rd   +   3,564 wr)
+==8977== LLd misses:       10,506  (  7,777 rd   +   2,729 wr)
+==8977== D1  miss rate:       1.6% (    1.8%     +     1.0%  )
+==8977== LLd miss rate:       0.9% (    0.9%     +     0.7%  )
+==8977== 
+==8977== LL refs:          20,523  ( 16,959 rd   +   3,564 wr)
+==8977== LL misses:        12,138  (  9,409 rd   +   2,729 wr)
+==8977== LL miss rate:        0.3% (    0.2%     +     0.7%  )
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_1 $ g++ main.cpp -g -o exec && valgrind --tool=cachegrind ./exec && rm exec
+==8989== Cachegrind, a cache and branch-prediction profiler
+==8989== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==8989== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==8989== Command: ./exec
+==8989== 
+--8989-- warning: L3 cache found, using its data for the LL simulation.
+1000
+==8989== 
+==8989== I   refs:      76,349,251
+==8989== I1  misses:         1,739
+==8989== LLi misses:         1,668
+==8989== I1  miss rate:       0.00%
+==8989== LLi miss rate:       0.00%
+==8989== 
+==8989== D   refs:      56,390,753  (33,906,924 rd   + 22,483,829 wr)
+==8989== D1  misses:       269,590  (   141,424 rd   +    128,166 wr)
+==8989== LLd misses:       261,767  (   134,578 rd   +    127,189 wr)
+==8989== D1  miss rate:        0.5% (       0.4%     +        0.6%  )
+==8989== LLd miss rate:        0.5% (       0.4%     +        0.6%  )
+==8989== 
+==8989== LL refs:          271,329  (   143,163 rd   +    128,166 wr)
+==8989== LL misses:        263,435  (   136,246 rd   +    127,189 wr)
+==8989== LL miss rate:         0.2% (       0.1%     +        0.6%  )
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_1 $ g++ main_2.cpp -g -o exec_2 && valgrind --tool=cachegrind ./exec_2 && rm exec_2
+==9003== Cachegrind, a cache and branch-prediction profiler
+==9003== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==9003== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==9003== Command: ./exec_2
+==9003== 
+--9003-- warning: L3 cache found, using its data for the LL simulation.
+1000
+==9003== 
+==9003== I   refs:      76,349,264
+==9003== I1  misses:         1,739
+==9003== LLi misses:         1,668
+==9003== I1  miss rate:       0.00%
+==9003== LLi miss rate:       0.00%
+==9003== 
+==9003== D   refs:      56,390,755  (33,906,925 rd   + 22,483,830 wr)
+==9003== D1  misses:     1,519,087  ( 1,390,920 rd   +    128,167 wr)
+==9003== LLd misses:       250,818  (   123,628 rd   +    127,190 wr)
+==9003== D1  miss rate:        2.7% (       4.1%     +        0.6%  )
+==9003== LLd miss rate:        0.4% (       0.4%     +        0.6%  )
+==9003== 
+==9003== LL refs:        1,520,826  ( 1,392,659 rd   +    128,167 wr)
+==9003== LL misses:        252,486  (   125,296 rd   +    127,190 wr)
+==9003== LL miss rate:         0.2% (       0.1%     +        0.6%  )
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_1 $ g++ main.cpp -g -o exec && valgrind --tool=cachegrind ./exec && rm exec
+==9016== Cachegrind, a cache and branch-prediction profiler
+==9016== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==9016== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==9016== Command: ./exec
+==9016== 
+--9016-- warning: L3 cache found, using its data for the LL simulation.
+200 
+==9016== 
+==9016== I   refs:      5,044,468
+==9016== I1  misses:        1,740
+==9016== LLi misses:        1,637
+==9016== I1  miss rate:      0.03%
+==9016== LLi miss rate:      0.03%
+==9016== 
+==9016== D   refs:      2,444,068  (1,621,545 rd   + 822,523 wr)
+==9016== D1  misses:       26,687  (   19,291 rd   +   7,396 wr)
+==9016== LLd misses:       14,333  (    7,779 rd   +   6,554 wr)
+==9016== D1  miss rate:       1.1% (      1.2%     +     0.9%  )
+==9016== LLd miss rate:       0.6% (      0.5%     +     0.8%  )
+==9016== 
+==9016== LL refs:          28,427  (   21,031 rd   +   7,396 wr)
+==9016== LL misses:        15,970  (    9,416 rd   +   6,554 wr)
+==9016== LL miss rate:        0.2% (      0.1%     +     0.8%  )
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_1 $ g++ main_2.cpp -g -o exec_2 && valgrind --tool=cachegrind ./exec_2 && rm exec_2
+==9029== Cachegrind, a cache and branch-prediction profiler
+==9029== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==9029== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==9029== Command: ./exec_2
+==9029== 
+--9029-- warning: L3 cache found, using its data for the LL simulation.
+200
+==9029== 
+==9029== I   refs:      5,044,481
+==9029== I1  misses:        1,740
+==9029== LLi misses:        1,637
+==9029== I1  miss rate:      0.03%
+==9029== LLi miss rate:      0.03%
+==9029== 
+==9029== D   refs:      2,444,070  (1,621,546 rd   + 822,524 wr)
+==9029== D1  misses:       26,587  (   19,190 rd   +   7,397 wr)
+==9029== LLd misses:       14,331  (    7,777 rd   +   6,554 wr)
+==9029== D1  miss rate:       1.1% (      1.2%     +     0.9%  )
+==9029== LLd miss rate:       0.6% (      0.5%     +     0.8%  )
+==9029== 
+==9029== LL refs:          28,327  (   20,930 rd   +   7,397 wr)
+==9029== LL misses:        15,968  (    9,414 rd   +   6,554 wr)
+==9029== LL miss rate:        0.2% (      0.1%     +     0.8%  )
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_1 $ g++ main.cpp -g -o exec && valgrind --tool=cachegrind ./exec && rm exec
+==9042== Cachegrind, a cache and branch-prediction profiler
+==9042== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==9042== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==9042== Command: ./exec
+==9042== 
+--9042-- warning: L3 cache found, using its data for the LL simulation.
+900
+==9042== 
+==9042== I   refs:      62,360,852
+==9042== I1  misses:         1,739
+==9042== LLi misses:         1,668
+==9042== I1  miss rate:       0.00%
+==9042== LLi miss rate:       0.00%
+==9042== 
+==9042== D   refs:      45,874,171  (27,599,578 rd   + 18,274,593 wr)
+==9042== D1  misses:       221,674  (   117,367 rd   +    104,307 wr)
+==9042== LLd misses:       213,920  (   110,557 rd   +    103,363 wr)
+==9042== D1  miss rate:        0.5% (       0.4%     +        0.6%  )
+==9042== LLd miss rate:        0.5% (       0.4%     +        0.6%  )
+==9042== 
+==9042== LL refs:          223,413  (   119,106 rd   +    104,307 wr)
+==9042== LL misses:        215,588  (   112,225 rd   +    103,363 wr)
+==9042== LL miss rate:         0.2% (       0.1%     +        0.6%  )
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_1 $ g++ main_2.cpp -g -o exec_2 && valgrind --tool=cachegrind ./exec_2 && rm exec_2
+==9056== Cachegrind, a cache and branch-prediction profiler
+==9056== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==9056== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==9056== Command: ./exec_2
+==9056== 
+--9056-- warning: L3 cache found, using its data for the LL simulation.
+900
+==9056== 
+==9056== I   refs:      62,360,865
+==9056== I1  misses:         1,739
+==9056== LLi misses:         1,668
+==9056== I1  miss rate:       0.00%
+==9056== LLi miss rate:       0.00%
+==9056== 
+==9056== D   refs:      45,874,173  (27,599,579 rd   + 18,274,594 wr)
+==9056== D1  misses:     1,234,169  ( 1,129,861 rd   +    104,308 wr)
+==9056== LLd misses:       193,575  (    90,211 rd   +    103,364 wr)
+==9056== D1  miss rate:        2.7% (       4.1%     +        0.6%  )
+==9056== LLd miss rate:        0.4% (       0.3%     +        0.6%  )
+==9056== 
+==9056== LL refs:        1,235,908  ( 1,131,600 rd   +    104,308 wr)
+==9056== LL misses:        195,243  (    91,879 rd   +    103,364 wr)
+==9056== LL miss rate:         0.2% (       0.1%     +        0.6%  )
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_1 $ g++ main.cpp -g -o exec && valgrind --tool=cachegrind ./exec && rm exec
+==9068== Cachegrind, a cache and branch-prediction profiler
+==9068== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==9068== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==9068== Command: ./exec
+==9068== 
+--9068-- warning: L3 cache found, using its data for the LL simulation.
+300
+==9068== 
+==9068== I   refs:      9,097,696
+==9068== I1  misses:        1,738
+==9068== LLi misses:        1,635
+==9068== I1  miss rate:      0.02%
+==9068== LLi miss rate:      0.02%
+==9068== 
+==9068== D   refs:      5,877,512  (3,617,411 rd   + 2,260,101 wr)
+==9068== D1  misses:       39,509  (   25,779 rd   +    13,730 wr)
+==9068== LLd misses:       20,658  (    7,779 rd   +    12,879 wr)
+==9068== D1  miss rate:       0.7% (      0.7%     +       0.6%  )
+==9068== LLd miss rate:       0.4% (      0.2%     +       0.6%  )
+==9068== 
+==9068== LL refs:          41,247  (   27,517 rd   +    13,730 wr)
+==9068== LL misses:        22,293  (    9,414 rd   +    12,879 wr)
+==9068== LL miss rate:        0.1% (      0.1%     +       0.6%  )
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_1 $ g++ main_2.cpp -g -o exec_2 && valgrind --tool=cachegrind ./exec_2 && rm exec_2
+==9081== Cachegrind, a cache and branch-prediction profiler
+==9081== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==9081== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==9081== Command: ./exec_2
+==9081== 
+--9081-- warning: L3 cache found, using its data for the LL simulation.
+300
+==9081== 
+==9081== I   refs:      9,097,709
+==9081== I1  misses:        1,738
+==9081== LLi misses:        1,635
+==9081== I1  miss rate:      0.02%
+==9081== LLi miss rate:      0.02%
+==9081== 
+==9081== D   refs:      5,877,514  (3,617,412 rd   + 2,260,102 wr)
+==9081== D1  misses:       39,813  (   26,082 rd   +    13,731 wr)
+==9081== LLd misses:       20,656  (    7,777 rd   +    12,879 wr)
+==9081== D1  miss rate:       0.7% (      0.7%     +       0.6%  )
+==9081== LLd miss rate:       0.4% (      0.2%     +       0.6%  )
+==9081== 
+==9081== LL refs:          41,551  (   27,820 rd   +    13,731 wr)
+==9081== LL misses:        22,291  (    9,412 rd   +    12,879 wr)
+==9081== LL miss rate:        0.1% (      0.1%     +       0.6%  )
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_1 $ g++ main.cpp -g -o exec && valgrind --tool=cachegrind ./exec && rm exec
+==9093== Cachegrind, a cache and branch-prediction profiler
+==9093== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==9093== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==9093== Command: ./exec
+==9093== 
+--9093-- warning: L3 cache found, using its data for the LL simulation.
+400
+==9093== 
+==9093== I   refs:      14,323,429
+==9093== I1  misses:         1,738
+==9093== LLi misses:         1,635
+==9093== I1  miss rate:       0.01%
+==9093== LLi miss rate:       0.01%
+==9093== 
+==9093== D   refs:       9,793,195  (5,964,090 rd   + 3,829,105 wr)
+==9093== D1  misses:        57,340  (   34,772 rd   +    22,568 wr)
+==9093== LLd misses:        29,483  (    7,779 rd   +    21,704 wr)
+==9093== D1  miss rate:        0.6% (      0.6%     +       0.6%  )
+==9093== LLd miss rate:        0.3% (      0.1%     +       0.6%  )
+==9093== 
+==9093== LL refs:           59,078  (   36,510 rd   +    22,568 wr)
+==9093== LL misses:         31,118  (    9,414 rd   +    21,704 wr)
+==9093== LL miss rate:         0.1% (      0.0%     +       0.6%  )
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_1 $ g++ main_2.cpp -g -o exec_2 && valgrind --tool=cachegrind ./exec_2 && rm exec_2
+==9105== Cachegrind, a cache and branch-prediction profiler
+==9105== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==9105== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==9105== Command: ./exec_2
+==9105== 
+--9105-- warning: L3 cache found, using its data for the LL simulation.
+400
+==9105== 
+==9105== I   refs:      14,323,442
+==9105== I1  misses:         1,738
+==9105== LLi misses:         1,635
+==9105== I1  miss rate:       0.01%
+==9105== LLi miss rate:       0.01%
+==9105== 
+==9105== D   refs:       9,793,197  (5,964,091 rd   + 3,829,106 wr)
+==9105== D1  misses:       162,543  (  139,974 rd   +    22,569 wr)
+==9105== LLd misses:        29,481  (    7,777 rd   +    21,704 wr)
+==9105== D1  miss rate:        1.7% (      2.3%     +       0.6%  )
+==9105== LLd miss rate:        0.3% (      0.1%     +       0.6%  )
+==9105== 
+==9105== LL refs:          164,281  (  141,712 rd   +    22,569 wr)
+==9105== LL misses:         31,116  (    9,412 rd   +    21,704 wr)
+==9105== LL miss rate:         0.1% (      0.0%     +       0.6%  )
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_1 $ g++ main.cpp -g -o exec && valgrind --tool=cachegrind ./exec && rm exec
+==9120== Cachegrind, a cache and branch-prediction profiler
+==9120== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==9120== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==9120== Command: ./exec
+==9120== 
+--9120-- warning: L3 cache found, using its data for the LL simulation.
+500
+==9120== 
+==9120== I   refs:      21,026,609
+==9120== I1  misses:         1,739
+==9120== LLi misses:         1,643
+==9120== I1  miss rate:       0.01%
+==9120== LLi miss rate:       0.01%
+==9120== 
+==9120== D   refs:      14,818,472  (8,976,930 rd   + 5,841,542 wr)
+==9120== D1  misses:        80,181  (   46,273 rd   +    33,908 wr)
+==9120== LLd misses:        40,810  (    7,781 rd   +    33,029 wr)
+==9120== D1  miss rate:        0.5% (      0.5%     +       0.6%  )
+==9120== LLd miss rate:        0.3% (      0.1%     +       0.6%  )
+==9120== 
+==9120== LL refs:           81,920  (   48,012 rd   +    33,908 wr)
+==9120== LL misses:         42,453  (    9,424 rd   +    33,029 wr)
+==9120== LL miss rate:         0.1% (      0.0%     +       0.6%  )
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_1 $ g++ main_2.cpp -g -o exec_2 && valgrind --tool=cachegrind ./exec_2 && rm exec_2
+==9133== Cachegrind, a cache and branch-prediction profiler
+==9133== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==9133== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==9133== Command: ./exec_2
+==9133== 
+--9133-- warning: L3 cache found, using its data for the LL simulation.
+500
+==9133== 
+==9133== I   refs:      21,026,622
+==9133== I1  misses:         1,739
+==9133== LLi misses:         1,643
+==9133== I1  miss rate:       0.01%
+==9133== LLi miss rate:       0.01%
+==9133== 
+==9133== D   refs:      14,818,474  (8,976,931 rd   + 5,841,543 wr)
+==9133== D1  misses:       392,597  (  358,688 rd   +    33,909 wr)
+==9133== LLd misses:        40,808  (    7,779 rd   +    33,029 wr)
+==9133== D1  miss rate:        2.6% (      4.0%     +       0.6%  )
+==9133== LLd miss rate:        0.3% (      0.1%     +       0.6%  )
+==9133== 
+==9133== LL refs:          394,336  (  360,427 rd   +    33,909 wr)
+==9133== LL misses:         42,451  (    9,422 rd   +    33,029 wr)
+==9133== LL miss rate:         0.1% (      0.0%     +       0.6%  )
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_1 $ g++ main_2.cpp -g -o exec_2 && valgrind --tool=cachegrind ./exec_2 && rm exec_2
+==9145== Cachegrind, a cache and branch-prediction profiler
+==9145== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==9145== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==9145== Command: ./exec_2
+==9145== 
+--9145-- warning: L3 cache found, using its data for the LL simulation.
+600
+==9145== 
+==9145== I   refs:      29,157,909
+==9145== I1  misses:         1,739
+==9145== LLi misses:         1,654
+==9145== I1  miss rate:       0.01%
+==9145== LLi miss rate:       0.01%
+==9145== 
+==9145== D   refs:      20,925,393  (12,638,175 rd   + 8,287,218 wr)
+==9145== D1  misses:       557,731  (   509,976 rd   +    47,755 wr)
+==9145== LLd misses:        54,811  (     7,926 rd   +    46,885 wr)
+==9145== D1  miss rate:        2.7% (       4.0%     +       0.6%  )
+==9145== LLd miss rate:        0.3% (       0.1%     +       0.6%  )
+==9145== 
+==9145== LL refs:          559,470  (   511,715 rd   +    47,755 wr)
+==9145== LL misses:         56,465  (     9,580 rd   +    46,885 wr)
+==9145== LL miss rate:         0.1% (       0.0%     +       0.6%  )
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_1 $ g++ main.cpp -g -o exec && valgrind --tool=cachegrind ./exec && rm exec
+==9159== Cachegrind, a cache and branch-prediction profiler
+==9159== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==9159== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==9159== Command: ./exec
+==9159== 
+--9159-- warning: L3 cache found, using its data for the LL simulation.
+600
+==9159== 
+==9159== I   refs:      29,157,896
+==9159== I1  misses:         1,739
+==9159== LLi misses:         1,654
+==9159== I1  miss rate:       0.01%
+==9159== LLi miss rate:       0.01%
+==9159== 
+==9159== D   refs:      20,925,391  (12,638,174 rd   + 8,287,217 wr)
+==9159== D1  misses:       108,034  (    60,280 rd   +    47,754 wr)
+==9159== LLd misses:        54,942  (     8,057 rd   +    46,885 wr)
+==9159== D1  miss rate:        0.5% (       0.5%     +       0.6%  )
+==9159== LLd miss rate:        0.3% (       0.1%     +       0.6%  )
+==9159== 
+==9159== LL refs:          109,773  (    62,019 rd   +    47,754 wr)
+==9159== LL misses:         56,596  (     9,711 rd   +    46,885 wr)
+==9159== LL miss rate:         0.1% (       0.0%     +       0.6%  )
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_1 $ g++ main.cpp -g -o exec && valgrind --tool=cachegrind ./exec && rm exec
+==9172== Cachegrind, a cache and branch-prediction profiler
+==9172== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==9172== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==9172== Command: ./exec
+==9172== 
+--9172-- warning: L3 cache found, using its data for the LL simulation.
+400
+==9172== 
+==9172== I   refs:      14,323,429
+==9172== I1  misses:         1,738
+==9172== LLi misses:         1,635
+==9172== I1  miss rate:       0.01%
+==9172== LLi miss rate:       0.01%
+==9172== 
+==9172== D   refs:       9,793,195  (5,964,090 rd   + 3,829,105 wr)
+==9172== D1  misses:        57,340  (   34,772 rd   +    22,568 wr)
+==9172== LLd misses:        29,483  (    7,779 rd   +    21,704 wr)
+==9172== D1  miss rate:        0.6% (      0.6%     +       0.6%  )
+==9172== LLd miss rate:        0.3% (      0.1%     +       0.6%  )
+==9172== 
+==9172== LL refs:           59,078  (   36,510 rd   +    22,568 wr)
+==9172== LL misses:         31,118  (    9,414 rd   +    21,704 wr)
+==9172== LL miss rate:         0.1% (      0.0%     +       0.6%  )
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_1 $ g++ main_2.cpp -g -o exec_2 && valgrind --tool=cachegrind ./exec_2 && rm exec_2
+==9185== Cachegrind, a cache and branch-prediction profiler
+==9185== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==9185== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==9185== Command: ./exec_2
+==9185== 
+--9185-- warning: L3 cache found, using its data for the LL simulation.
+400
+==9185== 
+==9185== I   refs:      14,323,442
+==9185== I1  misses:         1,738
+==9185== LLi misses:         1,635
+==9185== I1  miss rate:       0.01%
+==9185== LLi miss rate:       0.01%
+==9185== 
+==9185== D   refs:       9,793,197  (5,964,091 rd   + 3,829,106 wr)
+==9185== D1  misses:       162,543  (  139,974 rd   +    22,569 wr)
+==9185== LLd misses:        29,481  (    7,777 rd   +    21,704 wr)
+==9185== D1  miss rate:        1.7% (      2.3%     +       0.6%  )
+==9185== LLd miss rate:        0.3% (      0.1%     +       0.6%  )
+==9185== 
+==9185== LL refs:          164,281  (  141,712 rd   +    22,569 wr)
+==9185== LL misses:         31,116  (    9,412 rd   +    21,704 wr)
+==9185== LL miss rate:         0.1% (      0.0%     +       0.6%  )
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_1 $ g++ main.cpp -g -o exec && valgrind --tool=cachegrind ./exec && rm exec
+
+==9198== Cachegrind, a cache and branch-prediction profiler
+==9198== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==9198== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==9198== Command: ./exec
+==9198== 
+--9198-- warning: L3 cache found, using its data for the LL simulation.
+700 
+==9198== 
+==9198== I   refs:      38,765,758
+==9198== I1  misses:         1,741
+==9198== LLi misses:         1,670
+==9198== I1  miss rate:       0.00%
+==9198== LLi miss rate:       0.00%
+==9198== 
+==9198== D   refs:      28,141,788  (16,965,420 rd   + 11,176,368 wr)
+==9198== D1  misses:       140,901  (    76,801 rd   +     64,100 wr)
+==9198== LLd misses:       133,214  (    70,001 rd   +     63,213 wr)
+==9198== D1  miss rate:        0.5% (       0.5%     +        0.6%  )
+==9198== LLd miss rate:        0.5% (       0.4%     +        0.6%  )
+==9198== 
+==9198== LL refs:          142,642  (    78,542 rd   +     64,100 wr)
+==9198== LL misses:        134,884  (    71,671 rd   +     63,213 wr)
+==9198== LL miss rate:         0.2% (       0.1%     +        0.6%  )
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_1 $ g++ main_2.cpp -g -o exec_2 && valgrind --tool=cachegrind ./exec_2 && rm exec_2
+==9212== Cachegrind, a cache and branch-prediction profiler
+==9212== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==9212== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==9212== Command: ./exec_2
+==9212== 
+--9212-- warning: L3 cache found, using its data for the LL simulation.
+700
+==9212== 
+==9212== I   refs:      38,765,457
+==9212== I1  misses:         1,739
+==9212== LLi misses:         1,668
+==9212== I1  miss rate:       0.00%
+==9212== LLi miss rate:       0.00%
+==9212== 
+==9212== D   refs:      28,141,613  (16,965,287 rd   + 11,176,326 wr)
+==9212== D1  misses:       753,395  (   689,294 rd   +     64,101 wr)
+==9212== LLd misses:       106,065  (    42,851 rd   +     63,214 wr)
+==9212== D1  miss rate:        2.7% (       4.1%     +        0.6%  )
+==9212== LLd miss rate:        0.4% (       0.3%     +        0.6%  )
+==9212== 
+==9212== LL refs:          755,134  (   691,033 rd   +     64,101 wr)
+==9212== LL misses:        107,733  (    44,519 rd   +     63,214 wr)
+==9212== LL miss rate:         0.2% (       0.1%     +        0.6%  )
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_1 $ g++ main.cpp -g -o exec && valgrind --tool=cachegrind ./exec && rm exec
+==9222== Cachegrind, a cache and branch-prediction profiler
+==9222== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==9222== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==9222== Command: ./exec
+==9222== 
+--9222-- warning: L3 cache found, using its data for the LL simulation.
+800
+==9222== 
+==9222== I   refs:      49,859,185
+==9222== I1  misses:         1,739
+==9222== LLi misses:         1,668
+==9222== I1  miss rate:       0.00%
+==9222== LLi miss rate:       0.00%
+==9222== 
+==9222== D   refs:      36,472,882  (21,961,900 rd   + 14,510,982 wr)
+==9222== D1  misses:       178,785  (    95,832 rd   +     82,953 wr)
+==9222== LLd misses:       171,092  (    89,054 rd   +     82,038 wr)
+==9222== D1  miss rate:        0.5% (       0.4%     +        0.6%  )
+==9222== LLd miss rate:        0.5% (       0.4%     +        0.6%  )
+==9222== 
+==9222== LL refs:          180,524  (    97,571 rd   +     82,953 wr)
+==9222== LL misses:        172,760  (    90,722 rd   +     82,038 wr)
+==9222== LL miss rate:         0.2% (       0.1%     +        0.6%  )
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_1 $ g++ main_2.cpp -g -o exec_2 && valgrind --tool=cachegrind ./exec_2 && rm exec_2
+==9238== Cachegrind, a cache and branch-prediction profiler
+==9238== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==9238== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==9238== Command: ./exec_2
+==9238== 
+--9238-- warning: L3 cache found, using its data for the LL simulation.
+800
+==9238== 
+==9238== I   refs:      49,859,198
+==9238== I1  misses:         1,739
+==9238== LLi misses:         1,668
+==9238== I1  miss rate:       0.00%
+==9238== LLi miss rate:       0.00%
+==9238== 
+==9238== D   refs:      36,472,884  (21,961,901 rd   + 14,510,983 wr)
+==9238== D1  misses:       978,382  (   895,428 rd   +     82,954 wr)
+==9238== LLd misses:       151,339  (    69,300 rd   +     82,039 wr)
+==9238== D1  miss rate:        2.7% (       4.1%     +        0.6%  )
+==9238== LLd miss rate:        0.4% (       0.3%     +        0.6%  )
+==9238== 
+==9238== LL refs:          980,121  (   897,167 rd   +     82,954 wr)
+==9238== LL misses:        153,007  (    70,968 rd   +     82,039 wr)
+==9238== LL miss rate:         0.2% (       0.1%     +        0.6%  )
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_1 $ cd ..
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2 $ git status
+En la rama master
+Su rama está actualizada con «origin/master».
+nothing to commit, working directory clean
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2 $ git pull
+remote: Counting objects: 6, done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 6 (delta 4), reused 6 (delta 4), pack-reused 0
+Unpacking objects: 100% (6/6), done.
+De https://github.com/dave98/cpp_2018_2
+   0b7c116..9175ced  master     -> origin/master
+Updating 0b7c116..9175ced
+Fast-forward
+ paralelos_2/main.cpp   |  1 -
+ paralelos_2/main_1.cpp | 27 +++++++++++++++++++++++++++
+ paralelos_2/main_2.cpp | 41 +++++++++++++++++++++++++++++++++++++++++
+ 3 files changed, 68 insertions(+), 1 deletion(-)
+ create mode 100644 paralelos_2/main_1.cpp
+ create mode 100644 paralelos_2/main_2.cpp
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2 $ cd paralelos_2
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_2 $ ls
+main_1.cpp  main_2.cpp  main.cpp
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_2 $ g++ main_1.cpp -g -o exec_1 && valgrind --tool=cachegrind ./exec_1 && -rm exec_1
+main_1.cpp: In function ‘int main()’:
+main_1.cpp:14:65: error: ‘rand’ was not declared in this scope
+   vector< vector<double> >  a(max_1, vector<double>(max_2, rand()%100) );
+                                                                 ^
+main_1.cpp:17:23: error: ‘>>’ should be ‘> >’ within a nested template argument list
+   vector<vector<double>> c(a.size(), vector<double>(b[0].size(), 0));
+                       ^
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_2 $ cd ..
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2 $ git pull
+remote: Counting objects: 5, done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 5 (delta 3), reused 5 (delta 3), pack-reused 0
+Unpacking objects: 100% (5/5), done.
+De https://github.com/dave98/cpp_2018_2
+   9175ced..ac101b0  master     -> origin/master
+Updating 9175ced..ac101b0
+Fast-forward
+ paralelos_2/main_1.cpp | 5 +++--
+ paralelos_2/main_2.cpp | 1 +
+ 2 files changed, 4 insertions(+), 2 deletions(-)
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2 $ cd paralelos_2
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_2 $ g++ main_1.cpp -g -o exec_1 && valgrind --tool=cachegrind ./exec_1 && -rm exec_1
+==9341== Cachegrind, a cache and branch-prediction profiler
+==9341== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==9341== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==9341== Command: ./exec_1
+==9341== 
+--9341-- warning: L3 cache found, using its data for the LL simulation.
+10
+10
+==9341== 
+==9341== I   refs:      2,408,151
+==9341== I1  misses:        1,734
+==9341== LLi misses:        1,652
+==9341== I1  miss rate:      0.07%
+==9341== LLi miss rate:      0.07%
+==9341== 
+==9341== D   refs:        863,329  (617,098 rd   + 246,231 wr)
+==9341== D1  misses:       15,978  ( 13,708 rd   +   2,270 wr)
+==9341== LLd misses:        9,244  (  7,782 rd   +   1,462 wr)
+==9341== D1  miss rate:       1.9% (    2.2%     +     0.9%  )
+==9341== LLd miss rate:       1.1% (    1.3%     +     0.6%  )
+==9341== 
+==9341== LL refs:          17,712  ( 15,442 rd   +   2,270 wr)
+==9341== LL misses:        10,896  (  9,434 rd   +   1,462 wr)
+==9341== LL miss rate:        0.3% (    0.3%     +     0.6%  )
+No se ha encontrado la orden «-rm», quizás quiso decir:
+ La orden «frm» del paquete «mailutils» (universe)
+ La orden «crm» del paquete «crmsh» (main)
+ La orden «crm» del paquete «crm114» (universe)
+ La orden «rm» del paquete «safe-rm» (universe)
+ La orden «rm» del paquete «coreutils» (main)
+ La orden «vrm» del paquete «atfs» (universe)
+ La orden «arm» del paquete «tor-arm» (universe)
+ La orden «srm» del paquete «secure-delete» (universe)
+-rm: no se encontró la orden
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_2 $ g++ main_1.cpp -g -o exec_1 && valgrind --tool=cachegrind ./exec_1 && rm exec_1
+==9370== Cachegrind, a cache and branch-prediction profiler
+==9370== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==9370== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==9370== Command: ./exec_1
+==9370== 
+--9370-- warning: L3 cache found, using its data for the LL simulation.
+10 
+10
+==9370== 
+==9370== I   refs:      2,408,318
+==9370== I1  misses:        1,734
+==9370== LLi misses:        1,652
+==9370== I1  miss rate:      0.07%
+==9370== LLi miss rate:      0.07%
+==9370== 
+==9370== D   refs:        863,426  (617,174 rd   + 246,252 wr)
+==9370== D1  misses:       15,979  ( 13,709 rd   +   2,270 wr)
+==9370== LLd misses:        9,245  (  7,783 rd   +   1,462 wr)
+==9370== D1  miss rate:       1.9% (    2.2%     +     0.9%  )
+==9370== LLd miss rate:       1.1% (    1.3%     +     0.6%  )
+==9370== 
+==9370== LL refs:          17,713  ( 15,443 rd   +   2,270 wr)
+==9370== LL misses:        10,897  (  9,435 rd   +   1,462 wr)
+==9370== LL miss rate:        0.3% (    0.3%     +     0.6%  )
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_2 $ g++ main_2.cpp -g -o exec_2 && valgrind --tool=cachegrind ./exec_2 && rm exec_2
+==9384== Cachegrind, a cache and branch-prediction profiler
+==9384== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==9384== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==9384== Command: ./exec_2
+==9384== 
+--9384-- warning: L3 cache found, using its data for the LL simulation.
+10
+10
+==9384== 
+==9384== I   refs:      2,385,670
+==9384== I1  misses:        1,739
+==9384== LLi misses:        1,658
+==9384== I1  miss rate:      0.07%
+==9384== LLi miss rate:      0.07%
+==9384== 
+==9384== D   refs:        850,501  (609,733 rd   + 240,768 wr)
+==9384== D1  misses:       15,978  ( 13,708 rd   +   2,270 wr)
+==9384== LLd misses:        9,244  (  7,782 rd   +   1,462 wr)
+==9384== D1  miss rate:       1.9% (    2.2%     +     0.9%  )
+==9384== LLd miss rate:       1.1% (    1.3%     +     0.6%  )
+==9384== 
+==9384== LL refs:          17,717  ( 15,447 rd   +   2,270 wr)
+==9384== LL misses:        10,902  (  9,440 rd   +   1,462 wr)
+==9384== LL miss rate:        0.3% (    0.3%     +     0.6%  )
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_2 $ g++ main_1.cpp -g -o exec_1 && valgrind --tool=cachegrind ./exec_1 && rm exec_1
+==9397== Cachegrind, a cache and branch-prediction profiler
+==9397== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==9397== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==9397== Command: ./exec_1
+==9397== 
+--9397-- warning: L3 cache found, using its data for the LL simulation.
+100
+100
+==9397== 
+==9397== I   refs:      188,351,005
+==9397== I1  misses:          1,764
+==9397== LLi misses:          1,661
+==9397== I1  miss rate:        0.00%
+==9397== LLi miss rate:        0.00%
+==9397== 
+==9397== D   refs:      109,348,179  (66,906,707 rd   + 42,441,472 wr)
+==9397== D1  misses:        150,646  (   144,445 rd   +      6,201 wr)
+==9397== LLd misses:         13,136  (     7,782 rd   +      5,354 wr)
+==9397== D1  miss rate:         0.1% (       0.2%     +        0.0%  )
+==9397== LLd miss rate:         0.0% (       0.0%     +        0.0%  )
+==9397== 
+==9397== LL refs:           152,410  (   146,209 rd   +      6,201 wr)
+==9397== LL misses:          14,797  (     9,443 rd   +      5,354 wr)
+==9397== LL miss rate:          0.0% (       0.0%     +        0.0%  )
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_2 $ g++ main_2.cpp -g -o exec_2 && valgrind --tool=cachegrind ./exec_2 && rm exec_2
+==9408== Cachegrind, a cache and branch-prediction profiler
+==9408== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==9408== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==9408== Command: ./exec_2
+==9408== 
+--9408-- warning: L3 cache found, using its data for the LL simulation.
+100
+100
+==9408== 
+==9408== I   refs:      139,661,984
+==9408== I1  misses:          1,769
+==9408== LLi misses:          1,667
+==9408== I1  miss rate:        0.00%
+==9408== LLi miss rate:        0.00%
+==9408== 
+==9408== D   refs:       80,573,301  (49,720,187 rd   + 30,853,114 wr)
+==9408== D1  misses:         41,167  (    34,964 rd   +      6,203 wr)
+==9408== LLd misses:         13,136  (     7,782 rd   +      5,354 wr)
+==9408== D1  miss rate:         0.1% (       0.1%     +        0.0%  )
+==9408== LLd miss rate:         0.0% (       0.0%     +        0.0%  )
+==9408== 
+==9408== LL refs:            42,936  (    36,733 rd   +      6,203 wr)
+==9408== LL misses:          14,803  (     9,449 rd   +      5,354 wr)
+==9408== LL miss rate:          0.0% (       0.0%     +        0.0%  )
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_2 $ g++ main_1.cpp -g -o exec_1 && valgrind --tool=cachegrind ./exec_1 && rm exec_1
+==9433== Cachegrind, a cache and branch-prediction profiler
+==9433== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==9433== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==9433== Command: ./exec_1
+==9433== 
+--9433-- warning: L3 cache found, using its data for the LL simulation.
+5
+5
+==9433== 
+==9433== I   refs:      2,222,814
+==9433== I1  misses:        1,724
+==9433== LLi misses:        1,642
+==9433== I1  miss rate:      0.08%
+==9433== LLi miss rate:      0.07%
+==9433== 
+==9433== D   refs:        755,854  (551,954 rd   + 203,900 wr)
+==9433== D1  misses:       15,931  ( 13,702 rd   +   2,229 wr)
+==9433== LLd misses:        9,203  (  7,782 rd   +   1,421 wr)
+==9433== D1  miss rate:       2.1% (    2.5%     +     1.1%  )
+==9433== LLd miss rate:       1.2% (    1.4%     +     0.7%  )
+==9433== 
+==9433== LL refs:          17,655  ( 15,426 rd   +   2,229 wr)
+==9433== LL misses:        10,845  (  9,424 rd   +   1,421 wr)
+==9433== LL miss rate:        0.4% (    0.3%     +     0.7%  )
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_2 $ g++ main_2.cpp -g -o exec_2 && valgrind --tool=cachegrind ./exec_2 && rm exec_2
+==9445== Cachegrind, a cache and branch-prediction profiler
+==9445== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==9445== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==9445== Command: ./exec_2
+==9445== 
+--9445-- warning: L3 cache found, using its data for the LL simulation.
+5
+5
+==9445== 
+==9445== I   refs:      2,226,220
+==9445== I1  misses:        1,729
+==9445== LLi misses:        1,648
+==9445== I1  miss rate:      0.08%
+==9445== LLi miss rate:      0.07%
+==9445== 
+==9445== D   refs:        758,037  (553,355 rd   + 204,682 wr)
+==9445== D1  misses:       15,931  ( 13,702 rd   +   2,229 wr)
+==9445== LLd misses:        9,203  (  7,782 rd   +   1,421 wr)
+==9445== D1  miss rate:       2.1% (    2.5%     +     1.1%  )
+==9445== LLd miss rate:       1.2% (    1.4%     +     0.7%  )
+==9445== 
+==9445== LL refs:          17,660  ( 15,431 rd   +   2,229 wr)
+==9445== LL misses:        10,851  (  9,430 rd   +   1,421 wr)
+==9445== LL miss rate:        0.4% (    0.3%     +     0.7%  )
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_2 $ g++ main_1.cpp -g -o exec_1 && valgrind --tool=cachegrind ./exec_1 && rm exec_1
+==9458== Cachegrind, a cache and branch-prediction profiler
+==9458== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==9458== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==9458== Command: ./exec_1
+==9458== 
+--9458-- warning: L3 cache found, using its data for the LL simulation.
+200
+200
+==9458== 
+==9458== I   refs:      1,486,157,624
+==9458== I1  misses:            1,763
+==9458== LLi misses:            1,660
+==9458== I1  miss rate:          0.00%
+==9458== LLi miss rate:          0.00%
+==9458== 
+==9458== D   refs:        866,800,433  (529,795,132 rd   + 337,005,301 wr)
+==9458== D1  misses:        1,054,634  (  1,036,966 rd   +      17,668 wr)
+==9458== LLd misses:           24,586  (      7,782 rd   +      16,804 wr)
+==9458== D1  miss rate:           0.1% (        0.2%     +         0.0%  )
+==9458== LLd miss rate:           0.0% (        0.0%     +         0.0%  )
+==9458== 
+==9458== LL refs:           1,056,397  (  1,038,729 rd   +      17,668 wr)
+==9458== LL misses:            26,246  (      9,442 rd   +      16,804 wr)
+==9458== LL miss rate:            0.0% (        0.0%     +         0.0%  )
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_2 $ g++ main_2.cpp -g -o exec_2 && valgrind --tool=cachegrind ./exec_2 && rm exec_2
+==9473== Cachegrind, a cache and branch-prediction profiler
+==9473== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==9473== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==9473== Command: ./exec_2
+==9473== 
+--9473-- warning: L3 cache found, using its data for the LL simulation.
+200
+200
+==9473== 
+==9473== I   refs:      1,081,466,529
+==9473== I1  misses:            1,768
+==9473== LLi misses:            1,666
+==9473== I1  miss rate:          0.00%
+==9473== LLi miss rate:          0.00%
+==9473== 
+==9473== D   refs:        627,373,237  (386,642,377 rd   + 240,730,860 wr)
+==9473== D1  misses:          241,889  (    224,213 rd   +      17,676 wr)
+==9473== LLd misses:           24,586  (      7,782 rd   +      16,804 wr)
+==9473== D1  miss rate:           0.0% (        0.1%     +         0.0%  )
+==9473== LLd miss rate:           0.0% (        0.0%     +         0.0%  )
+==9473== 
+==9473== LL refs:             243,657  (    225,981 rd   +      17,676 wr)
+==9473== LL misses:            26,252  (      9,448 rd   +      16,804 wr)
+==9473== LL miss rate:            0.0% (        0.0%     +         0.0%  )
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_2 $ g++ main_2.cpp -g -o exec_2 && valgrind --tool=cachegrind ./exec_2 && find . -type f -name "*.out" -exec rm -f {}
+==9501== Cachegrind, a cache and branch-prediction profiler
+==9501== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==9501== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==9501== Command: ./exec_2
+==9501== 
+--9501-- warning: L3 cache found, using its data for the LL simulation.
+20   
+20
+==9501== 
+==9501== I   refs:      3,416,374
+==9501== I1  misses:        1,741
+==9501== LLi misses:        1,660
+==9501== I1  miss rate:      0.05%
+==9501== LLi miss rate:      0.05%
+==9501== 
+==9501== D   refs:      1,448,277  (977,039 rd   + 471,238 wr)
+==9501== D1  misses:       16,131  ( 13,729 rd   +   2,402 wr)
+==9501== LLd misses:        9,376  (  7,782 rd   +   1,594 wr)
+==9501== D1  miss rate:       1.1% (    1.4%     +     0.5%  )
+==9501== LLd miss rate:       0.6% (    0.8%     +     0.3%  )
+==9501== 
+==9501== LL refs:          17,872  ( 15,470 rd   +   2,402 wr)
+==9501== LL misses:        11,036  (  9,442 rd   +   1,594 wr)
+==9501== LL miss rate:        0.2% (    0.2%     +     0.3%  )
+find: falta un parámetro para «-exec»
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_2 $ g++ main_2.cpp -g -o exec_2 && valgrind --tool=cachegrind ./exec_2 && find . -type f -name "*.out" -exec rm -f {} \ 
+==9511== Cachegrind, a cache and branch-prediction profiler
+==9511== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==9511== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==9511== Command: ./exec_2
+==9511== 
+--9511-- warning: L3 cache found, using its data for the LL simulation.
+20 
+2'
+==9511== 
+==9511== I   refs:      2,388,915
+==9511== I1  misses:        1,756
+==9511== LLi misses:        1,674
+==9511== I1  miss rate:      0.07%
+==9511== LLi miss rate:      0.07%
+==9511== 
+==9511== D   refs:        851,508  (610,113 rd   + 241,395 wr)
+==9511== D1  misses:       16,013  ( 13,712 rd   +   2,301 wr)
+==9511== LLd misses:        9,276  (  7,783 rd   +   1,493 wr)
+==9511== D1  miss rate:       1.9% (    2.2%     +     1.0%  )
+==9511== LLd miss rate:       1.1% (    1.3%     +     0.6%  )
+==9511== 
+==9511== LL refs:          17,769  ( 15,468 rd   +   2,301 wr)
+==9511== LL misses:        10,950  (  9,457 rd   +   1,493 wr)
+==9511== LL miss rate:        0.3% (    0.3%     +     0.6%  )
+find: falta un parámetro para «-exec»
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_2 $ g++ main_2.cpp -g -o exec_2 && valgrind --tool=cachegrind ./exec_2 && find . -type f -name "*.out" -exec rm -f {} \;
+==9524== Cachegrind, a cache and branch-prediction profiler
+==9524== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==9524== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==9524== Command: ./exec_2
+==9524== 
+--9524-- warning: L3 cache found, using its data for the LL simulation.
+20
+20
+==9524== 
+==9524== I   refs:      3,416,374
+==9524== I1  misses:        1,741
+==9524== LLi misses:        1,660
+==9524== I1  miss rate:      0.05%
+==9524== LLi miss rate:      0.05%
+==9524== 
+==9524== D   refs:      1,448,277  (977,039 rd   + 471,238 wr)
+==9524== D1  misses:       16,131  ( 13,729 rd   +   2,402 wr)
+==9524== LLd misses:        9,376  (  7,782 rd   +   1,594 wr)
+==9524== D1  miss rate:       1.1% (    1.4%     +     0.5%  )
+==9524== LLd miss rate:       0.6% (    0.8%     +     0.3%  )
+==9524== 
+==9524== LL refs:          17,872  ( 15,470 rd   +   2,402 wr)
+==9524== LL misses:        11,036  (  9,442 rd   +   1,594 wr)
+==9524== LL miss rate:        0.2% (    0.2%     +     0.3%  )
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_2 $ g++ main_2.cpp -g -o exec_2 && valgrind --tool=cachegrind ./exec_2 && rm exec_2 && find . -type f -name "*.out" -exec rm -f {} \;
+==9551== Cachegrind, a cache and branch-prediction profiler
+==9551== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==9551== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==9551== Command: ./exec_2
+==9551== 
+--9551-- warning: L3 cache found, using its data for the LL simulation.
+20 
+20
+==9551== 
+==9551== I   refs:      3,416,374
+==9551== I1  misses:        1,741
+==9551== LLi misses:        1,660
+==9551== I1  miss rate:      0.05%
+==9551== LLi miss rate:      0.05%
+==9551== 
+==9551== D   refs:      1,448,277  (977,039 rd   + 471,238 wr)
+==9551== D1  misses:       16,131  ( 13,729 rd   +   2,402 wr)
+==9551== LLd misses:        9,376  (  7,782 rd   +   1,594 wr)
+==9551== D1  miss rate:       1.1% (    1.4%     +     0.5%  )
+==9551== LLd miss rate:       0.6% (    0.8%     +     0.3%  )
+==9551== 
+==9551== LL refs:          17,872  ( 15,470 rd   +   2,402 wr)
+==9551== LL misses:        11,036  (  9,442 rd   +   1,594 wr)
+==9551== LL miss rate:        0.2% (    0.2%     +     0.3%  )
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_2 $ g++ main_2.cpp -g -o exec_2 && valgrind --tool=cachegrind ./exec_2 && rm exec_2 && fin | grep cachegrind | xargs rm -f
+==9570== Cachegrind, a cache and branch-prediction profiler
+==9570== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==9570== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==9570== Command: ./exec_2
+==9570== 
+--9570-- warning: L3 cache found, using its data for the LL simulation.
+20 
+20
+==9570== 
+==9570== I   refs:      3,416,374
+==9570== I1  misses:        1,741
+==9570== LLi misses:        1,660
+==9570== I1  miss rate:      0.05%
+==9570== LLi miss rate:      0.05%
+==9570== 
+==9570== D   refs:      1,448,277  (977,039 rd   + 471,238 wr)
+==9570== D1  misses:       16,131  ( 13,729 rd   +   2,402 wr)
+==9570== LLd misses:        9,376  (  7,782 rd   +   1,594 wr)
+==9570== D1  miss rate:       1.1% (    1.4%     +     0.5%  )
+==9570== LLd miss rate:       0.6% (    0.8%     +     0.3%  )
+==9570== 
+==9570== LL refs:          17,872  ( 15,470 rd   +   2,402 wr)
+==9570== LL misses:        11,036  (  9,442 rd   +   1,594 wr)
+==9570== LL miss rate:        0.2% (    0.2%     +     0.3%  )
+No se ha encontrado la orden «fin», quizás quiso decir:
+ La orden «fid» del paquete «id-utils» (universe)
+ La orden «tin» del paquete «tin» (universe)
+ La orden «fio» del paquete «fio» (universe)
+ La orden «fiz» del paquete «zoo» (universe)
+ La orden «din» del paquete «din» (universe)
+ La orden «find» del paquete «findutils» (main)
+ La orden «win» del paquete «wily» (universe)
+ La orden «fim» del paquete «fim» (universe)
+ La orden «fis» del paquete «redboot-tools» (universe)
+fin: no se encontró la orden
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_2 $ g++ main_2.cpp -g -o exec_2 && valgrind --tool=cachegrind ./exec_2 && rm exec_2 && find | grep cachegrind | xargs rm -f
+==9588== Cachegrind, a cache and branch-prediction profiler
+==9588== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==9588== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==9588== Command: ./exec_2
+==9588== 
+--9588-- warning: L3 cache found, using its data for the LL simulation.
+20
+20
+==9588== 
+==9588== I   refs:      3,416,374
+==9588== I1  misses:        1,741
+==9588== LLi misses:        1,660
+==9588== I1  miss rate:      0.05%
+==9588== LLi miss rate:      0.05%
+==9588== 
+==9588== D   refs:      1,448,277  (977,039 rd   + 471,238 wr)
+==9588== D1  misses:       16,131  ( 13,729 rd   +   2,402 wr)
+==9588== LLd misses:        9,376  (  7,782 rd   +   1,594 wr)
+==9588== D1  miss rate:       1.1% (    1.4%     +     0.5%  )
+==9588== LLd miss rate:       0.6% (    0.8%     +     0.3%  )
+==9588== 
+==9588== LL refs:          17,872  ( 15,470 rd   +   2,402 wr)
+==9588== LL misses:        11,036  (  9,442 rd   +   1,594 wr)
+==9588== LL miss rate:        0.2% (    0.2%     +     0.3%  )
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_2 $ g++ main_1.cpp -g -o exec_1 && valgrind --tool=cachegrind ./exec_1 && rm exec_1 && find | grep cachegrind | xargs rm -f
+==9618== Cachegrind, a cache and branch-prediction profiler
+==9618== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==9618== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==9618== Command: ./exec_1
+==9618== 
+--9618-- warning: L3 cache found, using its data for the LL simulation.
+20 
+20
+==9618== 
+==9618== I   refs:      3,764,229
+==9618== I1  misses:        1,736
+==9618== LLi misses:        1,654
+==9618== I1  miss rate:      0.05%
+==9618== LLi miss rate:      0.04%
+==9618== 
+==9618== D   refs:      1,653,133  (1,098,674 rd   + 554,459 wr)
+==9618== D1  misses:       16,130  (   13,728 rd   +   2,402 wr)
+==9618== LLd misses:        9,376  (    7,782 rd   +   1,594 wr)
+==9618== D1  miss rate:       1.0% (      1.2%     +     0.4%  )
+==9618== LLd miss rate:       0.6% (      0.7%     +     0.3%  )
+==9618== 
+==9618== LL refs:          17,866  (   15,464 rd   +   2,402 wr)
+==9618== LL misses:        11,030  (    9,436 rd   +   1,594 wr)
+==9618== LL miss rate:        0.2% (      0.2%     +     0.3%  )
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_2 $ g++ main_1.cpp -g -o exec_1 && valgrind --tool=cachegrind ./exec_1 && rm exec_1 && find | grep cachegrind | xargs rm -f
+==9631== Cachegrind, a cache and branch-prediction profiler
+==9631== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==9631== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==9631== Command: ./exec_1
+==9631== 
+--9631-- warning: L3 cache found, using its data for the LL simulation.
+100
+100
+==9631== 
+==9631== I   refs:      188,351,005
+==9631== I1  misses:          1,764
+==9631== LLi misses:          1,661
+==9631== I1  miss rate:        0.00%
+==9631== LLi miss rate:        0.00%
+==9631== 
+==9631== D   refs:      109,348,179  (66,906,707 rd   + 42,441,472 wr)
+==9631== D1  misses:        150,646  (   144,445 rd   +      6,201 wr)
+==9631== LLd misses:         13,136  (     7,782 rd   +      5,354 wr)
+==9631== D1  miss rate:         0.1% (       0.2%     +        0.0%  )
+==9631== LLd miss rate:         0.0% (       0.0%     +        0.0%  )
+==9631== 
+==9631== LL refs:           152,410  (   146,209 rd   +      6,201 wr)
+==9631== LL misses:          14,797  (     9,443 rd   +      5,354 wr)
+==9631== LL miss rate:          0.0% (       0.0%     +        0.0%  )
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_2 $ g++ main_2.cpp -g -o exec_2 && valgrind --tool=cachegrind ./exec_2 && rm exec_2 && find | grep cachegrind | xargs rm -f
+==9646== Cachegrind, a cache and branch-prediction profiler
+==9646== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==9646== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==9646== Command: ./exec_2
+==9646== 
+--9646-- warning: L3 cache found, using its data for the LL simulation.
+100
+100
+==9646== 
+==9646== I   refs:      139,661,984
+==9646== I1  misses:          1,769
+==9646== LLi misses:          1,667
+==9646== I1  miss rate:        0.00%
+==9646== LLi miss rate:        0.00%
+==9646== 
+==9646== D   refs:       80,573,301  (49,720,187 rd   + 30,853,114 wr)
+==9646== D1  misses:         41,167  (    34,964 rd   +      6,203 wr)
+==9646== LLd misses:         13,136  (     7,782 rd   +      5,354 wr)
+==9646== D1  miss rate:         0.1% (       0.1%     +        0.0%  )
+==9646== LLd miss rate:         0.0% (       0.0%     +        0.0%  )
+==9646== 
+==9646== LL refs:            42,936  (    36,733 rd   +      6,203 wr)
+==9646== LL misses:          14,803  (     9,449 rd   +      5,354 wr)
+==9646== LL miss rate:          0.0% (       0.0%     +        0.0%  )
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_2 $ g++ main_1.cpp -g -o exec_1 && valgrind --tool=cachegrind ./exec_1 && rm exec_1 && find | grep cachegrind | xargs rm -f
+==9686== Cachegrind, a cache and branch-prediction profiler
+==9686== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==9686== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==9686== Command: ./exec_1
+==9686== 
+--9686-- warning: L3 cache found, using its data for the LL simulation.
+10
+10
+==9686== 
+==9686== I   refs:      2,408,151
+==9686== I1  misses:        1,734
+==9686== LLi misses:        1,652
+==9686== I1  miss rate:      0.07%
+==9686== LLi miss rate:      0.07%
+==9686== 
+==9686== D   refs:        863,329  (617,098 rd   + 246,231 wr)
+==9686== D1  misses:       15,978  ( 13,708 rd   +   2,270 wr)
+==9686== LLd misses:        9,244  (  7,782 rd   +   1,462 wr)
+==9686== D1  miss rate:       1.9% (    2.2%     +     0.9%  )
+==9686== LLd miss rate:       1.1% (    1.3%     +     0.6%  )
+==9686== 
+==9686== LL refs:          17,712  ( 15,442 rd   +   2,270 wr)
+==9686== LL misses:        10,896  (  9,434 rd   +   1,462 wr)
+==9686== LL miss rate:        0.3% (    0.3%     +     0.6%  )
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_2 $ g++ main_2.cpp -g -o exec_2 && valgrind --tool=cachegrind ./exec_2 && rm exec_2 && find | grep cachegrind | xargs rm -f
+==9698== Cachegrind, a cache and branch-prediction profiler
+==9698== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==9698== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==9698== Command: ./exec_2
+==9698== 
+--9698-- warning: L3 cache found, using its data for the LL simulation.
+10
+10
+==9698== 
+==9698== I   refs:      2,385,670
+==9698== I1  misses:        1,739
+==9698== LLi misses:        1,658
+==9698== I1  miss rate:      0.07%
+==9698== LLi miss rate:      0.07%
+==9698== 
+==9698== D   refs:        850,501  (609,733 rd   + 240,768 wr)
+==9698== D1  misses:       15,978  ( 13,708 rd   +   2,270 wr)
+==9698== LLd misses:        9,244  (  7,782 rd   +   1,462 wr)
+==9698== D1  miss rate:       1.9% (    2.2%     +     0.9%  )
+==9698== LLd miss rate:       1.1% (    1.3%     +     0.6%  )
+==9698== 
+==9698== LL refs:          17,717  ( 15,447 rd   +   2,270 wr)
+==9698== LL misses:        10,902  (  9,440 rd   +   1,462 wr)
+==9698== LL miss rate:        0.3% (    0.3%     +     0.6%  )
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_2 $ g++ main_1.cpp -g -o exec_1 && valgrind --tool=cachegrind ./exec_1 && rm exec_1 && find | grep cachegrind | xargs rm -f
+==9714== Cachegrind, a cache and branch-prediction profiler
+==9714== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==9714== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==9714== Command: ./exec_1
+==9714== 
+--9714-- warning: L3 cache found, using its data for the LL simulation.
+30   
+30
+==9714== 
+==9714== I   refs:      7,354,556
+==9714== I1  misses:        1,736
+==9714== LLi misses:        1,654
+==9714== I1  miss rate:      0.02%
+==9714== LLi miss rate:      0.02%
+==9714== 
+==9714== D   refs:      3,745,748  (2,376,556 rd   + 1,369,192 wr)
+==9714== D1  misses:       16,465  (   13,851 rd   +     2,614 wr)
+==9714== LLd misses:        9,585  (    7,783 rd   +     1,802 wr)
+==9714== D1  miss rate:       0.4% (      0.6%     +       0.2%  )
+==9714== LLd miss rate:       0.3% (      0.3%     +       0.1%  )
+==9714== 
+==9714== LL refs:          18,201  (   15,587 rd   +     2,614 wr)
+==9714== LL misses:        11,239  (    9,437 rd   +     1,802 wr)
+==9714== LL miss rate:        0.1% (      0.1%     +       0.1%  )
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_2 $ g++ main_1.cpp -g -o exec_1 && valgrind --tool=cachegrind ./exec_1 && rm exec_1 && find | grep cachegrind | xargs rm -f
+==9727== Cachegrind, a cache and branch-prediction profiler
+==9727== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==9727== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==9727== Command: ./exec_1
+==9727== 
+--9727-- warning: L3 cache found, using its data for the LL simulation.
+50
+50
+==9727== 
+==9727== I   refs:      25,687,617
+==9727== I1  misses:         1,739
+==9727== LLi misses:         1,655
+==9727== I1  miss rate:       0.01%
+==9727== LLi miss rate:       0.01%
+==9727== 
+==9727== D   refs:      14,436,163  (8,907,836 rd   + 5,528,327 wr)
+==9727== D1  misses:        18,230  (   14,955 rd   +     3,275 wr)
+==9727== LLd misses:        10,224  (    7,782 rd   +     2,442 wr)
+==9727== D1  miss rate:        0.1% (      0.2%     +       0.1%  )
+==9727== LLd miss rate:        0.1% (      0.1%     +       0.0%  )
+==9727== 
+==9727== LL refs:           19,969  (   16,694 rd   +     3,275 wr)
+==9727== LL misses:         11,879  (    9,437 rd   +     2,442 wr)
+==9727== LL miss rate:         0.0% (      0.0%     +       0.0%  )
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_2 $ g++ main_1.cpp -g -o exec_1 && valgrind --tool=cachegrind ./exec_1 && rm exec_1 && find | grep cachegrind | xargs rm -f
+==9742== Cachegrind, a cache and branch-prediction profiler
+==9742== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==9742== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==9742== Command: ./exec_1
+==9742== 
+--9742-- warning: L3 cache found, using its data for the LL simulation.
+20
+20
+==9742== 
+==9742== I   refs:      3,764,229
+==9742== I1  misses:        1,736
+==9742== LLi misses:        1,654
+==9742== I1  miss rate:      0.05%
+==9742== LLi miss rate:      0.04%
+==9742== 
+==9742== D   refs:      1,653,133  (1,098,674 rd   + 554,459 wr)
+==9742== D1  misses:       16,130  (   13,728 rd   +   2,402 wr)
+==9742== LLd misses:        9,376  (    7,782 rd   +   1,594 wr)
+==9742== D1  miss rate:       1.0% (      1.2%     +     0.4%  )
+==9742== LLd miss rate:       0.6% (      0.7%     +     0.3%  )
+==9742== 
+==9742== LL refs:          17,866  (   15,464 rd   +   2,402 wr)
+==9742== LL misses:        11,030  (    9,436 rd   +   1,594 wr)
+==9742== LL miss rate:        0.2% (      0.2%     +     0.3%  )
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_2 $ g++ main_2.cpp -g -o exec_2 && valgrind --tool=cachegrind ./exec_2 && rm exec_2 && find | grep cachegrind | xargs rm -f
+==9756== Cachegrind, a cache and branch-prediction profiler
+==9756== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==9756== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==9756== Command: ./exec_2
+==9756== 
+--9756-- warning: L3 cache found, using its data for the LL simulation.
+20 
+20
+==9756== 
+==9756== I   refs:      3,416,374
+==9756== I1  misses:        1,741
+==9756== LLi misses:        1,660
+==9756== I1  miss rate:      0.05%
+==9756== LLi miss rate:      0.05%
+==9756== 
+==9756== D   refs:      1,448,277  (977,039 rd   + 471,238 wr)
+==9756== D1  misses:       16,131  ( 13,729 rd   +   2,402 wr)
+==9756== LLd misses:        9,376  (  7,782 rd   +   1,594 wr)
+==9756== D1  miss rate:       1.1% (    1.4%     +     0.5%  )
+==9756== LLd miss rate:       0.6% (    0.8%     +     0.3%  )
+==9756== 
+==9756== LL refs:          17,872  ( 15,470 rd   +   2,402 wr)
+==9756== LL misses:        11,036  (  9,442 rd   +   1,594 wr)
+==9756== LL miss rate:        0.2% (    0.2%     +     0.3%  )
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_2 $ g++ main_1.cpp -g -o exec_1 && valgrind --tool=cachegrind ./exec_1 && rm exec_1 && find | grep cachegrind | xargs rm -f
+==9829== Cachegrind, a cache and branch-prediction profiler
+==9829== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==9829== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==9829== Command: ./exec_1
+==9829== 
+--9829-- warning: L3 cache found, using its data for the LL simulation.
+30
+30
+==9829== 
+==9829== I   refs:      7,354,389
+==9829== I1  misses:        1,736
+==9829== LLi misses:        1,654
+==9829== I1  miss rate:      0.02%
+==9829== LLi miss rate:      0.02%
+==9829== 
+==9829== D   refs:      3,745,651  (2,376,480 rd   + 1,369,171 wr)
+==9829== D1  misses:       16,464  (   13,850 rd   +     2,614 wr)
+==9829== LLd misses:        9,584  (    7,782 rd   +     1,802 wr)
+==9829== D1  miss rate:       0.4% (      0.6%     +       0.2%  )
+==9829== LLd miss rate:       0.3% (      0.3%     +       0.1%  )
+==9829== 
+==9829== LL refs:          18,200  (   15,586 rd   +     2,614 wr)
+==9829== LL misses:        11,238  (    9,436 rd   +     1,802 wr)
+==9829== LL miss rate:        0.1% (      0.1%     +       0.1%  )
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_2 $ g++ main_2.cpp -g -o exec_2 && valgrind --tool=cachegrind ./exec_2 && rm exec_2 && find | grep cachegrind | xargs rm -f
+==9842== Cachegrind, a cache and branch-prediction profiler
+==9842== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==9842== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==9842== Command: ./exec_2
+==9842== 
+--9842-- warning: L3 cache found, using its data for the LL simulation.
+30 
+30
+==9842== 
+==9842== I   refs:      5,897,420
+==9842== I1  misses:        1,741
+==9842== LLi misses:        1,660
+==9842== I1  miss rate:      0.03%
+==9842== LLi miss rate:      0.03%
+==9842== 
+==9842== D   refs:      2,889,407  (1,863,260 rd   + 1,026,147 wr)
+==9842== D1  misses:       16,446  (   13,832 rd   +     2,614 wr)
+==9842== LLd misses:        9,584  (    7,782 rd   +     1,802 wr)
+==9842== D1  miss rate:       0.6% (      0.7%     +       0.3%  )
+==9842== LLd miss rate:       0.3% (      0.4%     +       0.2%  )
+==9842== 
+==9842== LL refs:          18,187  (   15,573 rd   +     2,614 wr)
+==9842== LL misses:        11,244  (    9,442 rd   +     1,802 wr)
+==9842== LL miss rate:        0.1% (      0.1%     +       0.2%  )
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_2 $ 40
+40: no se encontró la orden
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_2 $ g++ main_1.cpp -g -o exec_1 && valgrind --tool=cachegrind ./exec_1 && rm exec_1 && find | grep cachegrind | xargs rm -f
+==9859== Cachegrind, a cache and branch-prediction profiler
+==9859== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==9859== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==9859== Command: ./exec_1
+==9859== 
+--9859-- warning: L3 cache found, using its data for the LL simulation.
+40
+40
+==9859== 
+==9859== I   refs:      14,293,319
+==9859== I1  misses:         1,739
+==9859== LLi misses:         1,655
+==9859== I1  miss rate:       0.01%
+==9859== LLi miss rate:       0.01%
+==9859== 
+==9859== D   refs:       7,790,391  (4,847,400 rd   + 2,942,991 wr)
+==9859== D1  misses:        17,219  (   14,305 rd   +     2,914 wr)
+==9859== LLd misses:         9,866  (    7,782 rd   +     2,084 wr)
+==9859== D1  miss rate:        0.2% (      0.3%     +       0.1%  )
+==9859== LLd miss rate:        0.1% (      0.2%     +       0.1%  )
+==9859== 
+==9859== LL refs:           18,958  (   16,044 rd   +     2,914 wr)
+==9859== LL misses:         11,521  (    9,437 rd   +     2,084 wr)
+==9859== LL miss rate:         0.1% (      0.0%     +       0.1%  )
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_2 $ g++ main_2.cpp -g -o exec_2 && valgrind --tool=cachegrind ./exec_2 && rm exec_2 && find | grep cachegrind | xargs rm -f
+==9873== Cachegrind, a cache and branch-prediction profiler
+==9873== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==9873== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==9873== Command: ./exec_2
+==9873== 
+--9873-- warning: L3 cache found, using its data for the LL simulation.
+40
+40
+==9873== 
+==9873== I   refs:      11,437,958
+==9873== I1  misses:         1,744
+==9873== LLi misses:         1,661
+==9873== I1  miss rate:       0.02%
+==9873== LLi miss rate:       0.01%
+==9873== 
+==9873== D   refs:       6,107,413  (3,845,150 rd   + 2,262,263 wr)
+==9873== D1  misses:        17,173  (   14,259 rd   +     2,914 wr)
+==9873== LLd misses:         9,866  (    7,782 rd   +     2,084 wr)
+==9873== D1  miss rate:        0.3% (      0.4%     +       0.1%  )
+==9873== LLd miss rate:        0.2% (      0.2%     +       0.1%  )
+==9873== 
+==9873== LL refs:           18,917  (   16,003 rd   +     2,914 wr)
+==9873== LL misses:         11,527  (    9,443 rd   +     2,084 wr)
+==9873== LL miss rate:         0.1% (      0.1%     +       0.1%  )
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_2 $ g++ main_1.cpp -g -o exec_1 && valgrind --tool=cachegrind ./exec_1 && rm exec_1 && find | grep cachegrind | xargs rm -f
+==9886== Cachegrind, a cache and branch-prediction profiler
+==9886== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==9886== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==9886== Command: ./exec_1
+==9886== 
+--9886-- warning: L3 cache found, using its data for the LL simulation.
+50
+50
+==9886== 
+==9886== I   refs:      25,687,617
+==9886== I1  misses:         1,739
+==9886== LLi misses:         1,655
+==9886== I1  miss rate:       0.01%
+==9886== LLi miss rate:       0.01%
+==9886== 
+==9886== D   refs:      14,436,163  (8,907,836 rd   + 5,528,327 wr)
+==9886== D1  misses:        18,230  (   14,955 rd   +     3,275 wr)
+==9886== LLd misses:        10,224  (    7,782 rd   +     2,442 wr)
+==9886== D1  miss rate:        0.1% (      0.2%     +       0.1%  )
+==9886== LLd miss rate:        0.1% (      0.1%     +       0.0%  )
+==9886== 
+==9886== LL refs:           19,969  (   16,694 rd   +     3,275 wr)
+==9886== LL misses:         11,879  (    9,437 rd   +     2,442 wr)
+==9886== LL miss rate:         0.0% (      0.0%     +       0.0%  )
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_2 $ g++ main_2.cpp -g -o exec_2 && valgrind --tool=cachegrind ./exec_2 && rm exec_2 && find | grep cachegrind | xargs rm -f
+==9900== Cachegrind, a cache and branch-prediction profiler
+==9900== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==9900== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==9900== Command: ./exec_2
+==9900== 
+--9900-- warning: L3 cache found, using its data for the LL simulation.
+50
+50
+==9900== 
+==9900== I   refs:      19,652,722
+==9900== I1  misses:         1,744
+==9900== LLi misses:         1,661
+==9900== I1  miss rate:       0.01%
+==9900== LLi miss rate:       0.01%
+==9900== 
+==9900== D   refs:      10,870,667  (6,780,306 rd   + 4,090,361 wr)
+==9900== D1  misses:        18,133  (   14,858 rd   +     3,275 wr)
+==9900== LLd misses:        10,224  (    7,782 rd   +     2,442 wr)
+==9900== D1  miss rate:        0.2% (      0.2%     +       0.1%  )
+==9900== LLd miss rate:        0.1% (      0.1%     +       0.1%  )
+==9900== 
+==9900== LL refs:           19,877  (   16,602 rd   +     3,275 wr)
+==9900== LL misses:         11,885  (    9,443 rd   +     2,442 wr)
+==9900== LL miss rate:         0.0% (      0.0%     +       0.1%  )
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_2 $ g++ main_1.cpp -g -o exec_1 && valgrind --tool=cachegrind ./exec_1 && rm exec_1 && find | grep cachegrind | xargs rm -f
+==9915== Cachegrind, a cache and branch-prediction profiler
+==9915== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==9915== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==9915== Command: ./exec_1
+==9915== 
+--9915-- warning: L3 cache found, using its data for the LL simulation.
+100
+100
+==9915== 
+==9915== I   refs:      188,351,005
+==9915== I1  misses:          1,764
+==9915== LLi misses:          1,661
+==9915== I1  miss rate:        0.00%
+==9915== LLi miss rate:        0.00%
+==9915== 
+==9915== D   refs:      109,348,179  (66,906,707 rd   + 42,441,472 wr)
+==9915== D1  misses:        150,646  (   144,445 rd   +      6,201 wr)
+==9915== LLd misses:         13,136  (     7,782 rd   +      5,354 wr)
+==9915== D1  miss rate:         0.1% (       0.2%     +        0.0%  )
+==9915== LLd miss rate:         0.0% (       0.0%     +        0.0%  )
+==9915== 
+==9915== LL refs:           152,410  (   146,209 rd   +      6,201 wr)
+==9915== LL misses:          14,797  (     9,443 rd   +      5,354 wr)
+==9915== LL miss rate:          0.0% (       0.0%     +        0.0%  )
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_2 $ g++ main_2.cpp -g -o exec_2 && valgrind --tool=cachegrind ./exec_2 && rm exec_2 && find | grep cachegrind | xargs rm -f
+==9930== Cachegrind, a cache and branch-prediction profiler
+==9930== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==9930== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==9930== Command: ./exec_2
+==9930== 
+--9930-- warning: L3 cache found, using its data for the LL simulation.
+100
+100
+==9930== 
+==9930== I   refs:      139,661,984
+==9930== I1  misses:          1,769
+==9930== LLi misses:          1,667
+==9930== I1  miss rate:        0.00%
+==9930== LLi miss rate:        0.00%
+==9930== 
+==9930== D   refs:       80,573,301  (49,720,187 rd   + 30,853,114 wr)
+==9930== D1  misses:         41,167  (    34,964 rd   +      6,203 wr)
+==9930== LLd misses:         13,136  (     7,782 rd   +      5,354 wr)
+==9930== D1  miss rate:         0.1% (       0.1%     +        0.0%  )
+==9930== LLd miss rate:         0.0% (       0.0%     +        0.0%  )
+==9930== 
+==9930== LL refs:            42,936  (    36,733 rd   +      6,203 wr)
+==9930== LL misses:          14,803  (     9,449 rd   +      5,354 wr)
+==9930== LL miss rate:          0.0% (       0.0%     +        0.0%  )
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_2 $ g++ main_1.cpp -g -o exec_1 && valgrind --tool=cachegrind ./exec_1 && rm exec_1 && find | grep cachegrind | xargs rm -f
+==9944== Cachegrind, a cache and branch-prediction profiler
+==9944== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==9944== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==9944== Command: ./exec_1
+==9944== 
+--9944-- warning: L3 cache found, using its data for the LL simulation.
+150
+150
+==9944== 
+==9944== I   refs:      628,927,778
+==9944== I1  misses:          1,763
+==9944== LLi misses:          1,660
+==9944== I1  miss rate:        0.00%
+==9944== LLi miss rate:        0.00%
+==9944== 
+==9944== D   refs:      366,471,491  (224,037,200 rd   + 142,434,291 wr)
+==9944== D1  misses:        458,754  (    447,758 rd   +      10,996 wr)
+==9944== LLd misses:         17,924  (      7,782 rd   +      10,142 wr)
+==9944== D1  miss rate:         0.1% (        0.2%     +         0.0%  )
+==9944== LLd miss rate:         0.0% (        0.0%     +         0.0%  )
+==9944== 
+==9944== LL refs:           460,517  (    449,521 rd   +      10,996 wr)
+==9944== LL misses:          19,584  (      9,442 rd   +      10,142 wr)
+==9944== LL miss rate:          0.0% (        0.0%     +         0.0%  )
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_2 $ g++ main_2.cpp -g -o exec_2 && valgrind --tool=cachegrind ./exec_2 && rm exec_2 && find | grep cachegrind | xargs rm -f
+==9957== Cachegrind, a cache and branch-prediction profiler
+==9957== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==9957== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==9957== Command: ./exec_2
+==9957== 
+--9957-- warning: L3 cache found, using its data for the LL simulation.
+150
+150
+==9957== 
+==9957== I   refs:      453,910,929
+==9957== I1  misses:          1,768
+==9957== LLi misses:          1,666
+==9957== I1  miss rate:        0.00%
+==9957== LLi miss rate:        0.00%
+==9957== 
+==9957== D   refs:      263,030,767  (162,129,100 rd   + 100,901,667 wr)
+==9957== D1  misses:         93,273  (     82,272 rd   +      11,001 wr)
+==9957== LLd misses:         17,924  (      7,782 rd   +      10,142 wr)
+==9957== D1  miss rate:         0.0% (        0.1%     +         0.0%  )
+==9957== LLd miss rate:         0.0% (        0.0%     +         0.0%  )
+==9957== 
+==9957== LL refs:            95,041  (     84,040 rd   +      11,001 wr)
+==9957== LL misses:          19,590  (      9,448 rd   +      10,142 wr)
+==9957== LL miss rate:          0.0% (        0.0%     +         0.0%  )
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_2 $ g++ main_1.cpp -g -o exec_1 && valgrind --tool=cachegrind ./exec_1 && rm exec_1 && find | grep cachegrind | xargs rm -f
+==9971== Cachegrind, a cache and branch-prediction profiler
+==9971== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==9971== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==9971== Command: ./exec_1
+==9971== 
+--9971-- warning: L3 cache found, using its data for the LL simulation.
+200
+200
+==9971== 
+==9971== I   refs:      1,486,157,624
+==9971== I1  misses:            1,763
+==9971== LLi misses:            1,660
+==9971== I1  miss rate:          0.00%
+==9971== LLi miss rate:          0.00%
+==9971== 
+==9971== D   refs:        866,800,433  (529,795,132 rd   + 337,005,301 wr)
+==9971== D1  misses:        1,054,634  (  1,036,966 rd   +      17,668 wr)
+==9971== LLd misses:           24,586  (      7,782 rd   +      16,804 wr)
+==9971== D1  miss rate:           0.1% (        0.2%     +         0.0%  )
+==9971== LLd miss rate:           0.0% (        0.0%     +         0.0%  )
+==9971== 
+==9971== LL refs:           1,056,397  (  1,038,729 rd   +      17,668 wr)
+==9971== LL misses:            26,246  (      9,442 rd   +      16,804 wr)
+==9971== LL miss rate:            0.0% (        0.0%     +         0.0%  )
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_2 $ g++ main_2.cpp -g -o exec_2 && valgrind --tool=cachegrind ./exec_2 && rm exec_2 && find | grep cachegrind | xargs rm -f
+==9985== Cachegrind, a cache and branch-prediction profiler
+==9985== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==9985== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==9985== Command: ./exec_2
+==9985== 
+--9985-- warning: L3 cache found, using its data for the LL simulation.
+200
+200
+==9985== 
+==9985== I   refs:      1,081,466,529
+==9985== I1  misses:            1,768
+==9985== LLi misses:            1,666
+==9985== I1  miss rate:          0.00%
+==9985== LLi miss rate:          0.00%
+==9985== 
+==9985== D   refs:        627,373,237  (386,642,377 rd   + 240,730,860 wr)
+==9985== D1  misses:          241,889  (    224,213 rd   +      17,676 wr)
+==9985== LLd misses:           24,586  (      7,782 rd   +      16,804 wr)
+==9985== D1  miss rate:           0.0% (        0.1%     +         0.0%  )
+==9985== LLd miss rate:           0.0% (        0.0%     +         0.0%  )
+==9985== 
+==9985== LL refs:             243,657  (    225,981 rd   +      17,676 wr)
+==9985== LL misses:            26,252  (      9,448 rd   +      16,804 wr)
+==9985== LL miss rate:            0.0% (        0.0%     +         0.0%  )
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_2 $ g++ main_1.cpp -g -o exec_1 && valgrind --tool=cachegrind ./exec_1 && rm exec_1 && find | grep cachegrind | xargs rm -f
+==10000== Cachegrind, a cache and branch-prediction profiler
+==10000== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==10000== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==10000== Command: ./exec_1
+==10000== 
+--10000-- warning: L3 cache found, using its data for the LL simulation.
+250
+250
+==10000== 
+==10000== I   refs:      2,898,792,956
+==10000== I1  misses:            1,763
+==10000== LLi misses:            1,660
+==10000== I1  miss rate:          0.00%
+==10000== LLi miss rate:          0.00%
+==10000== 
+==10000== D   refs:      1,691,336,389  (1,033,681,522 rd   + 657,654,867 wr)
+==10000== D1  misses:        2,031,248  (    2,005,036 rd   +      26,212 wr)
+==10000== LLd misses:           33,124  (        7,782 rd   +      25,342 wr)
+==10000== D1  miss rate:           0.1% (          0.2%     +         0.0%  )
+==10000== LLd miss rate:           0.0% (          0.0%     +         0.0%  )
+==10000== 
+==10000== LL refs:           2,033,011  (    2,006,799 rd   +      26,212 wr)
+==10000== LL misses:            34,784  (        9,442 rd   +      25,342 wr)
+==10000== LL miss rate:            0.0% (          0.0%     +         0.0%  )
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_2 $ g++ main_2.cpp -g -o exec_2 && valgrind --tool=cachegrind ./exec_2 && rm exec_2 && find | grep cachegrind | xargs rm -f
+==10015== Cachegrind, a cache and branch-prediction profiler
+==10015== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==10015== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==10015== Command: ./exec_2
+==10015== 
+--10015-- warning: L3 cache found, using its data for the LL simulation.
+250
+250
+==10015== 
+==10015== I   refs:      2,113,057,035
+==10015== I1  misses:            1,768
+==10015== LLi misses:            1,666
+==10015== I1  miss rate:          0.00%
+==10015== LLi miss rate:          0.00%
+==10015== 
+==10015== D   refs:      1,226,540,761  (755,788,077 rd   + 470,752,684 wr)
+==10015== D1  misses:          792,184  (    765,961 rd   +      26,223 wr)
+==10015== LLd misses:           33,124  (      7,782 rd   +      25,342 wr)
+==10015== D1  miss rate:           0.1% (        0.1%     +         0.0%  )
+==10015== LLd miss rate:           0.0% (        0.0%     +         0.0%  )
+==10015== 
+==10015== LL refs:             793,952  (    767,729 rd   +      26,223 wr)
+==10015== LL misses:            34,790  (      9,448 rd   +      25,342 wr)
+==10015== LL miss rate:            0.0% (        0.0%     +         0.0%  )
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_2 $ g++ main_1.cpp -g -o exec_1 && valgrind --tool=cachegrind ./exec_1 && rm exec_1 && find | grep cachegrind | xargs rm -f
+==10030== Cachegrind, a cache and branch-prediction profiler
+==10030== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==10030== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==10030== Command: ./exec_1
+==10030== 
+--10030-- warning: L3 cache found, using its data for the LL simulation.
+300
+300
+==10030== 
+==10030== I   refs:      5,007,526,166
+==10030== I1  misses:            1,761
+==10030== LLi misses:            1,666
+==10030== I1  miss rate:          0.00%
+==10030== LLi miss rate:          0.00%
+==10030== 
+==10030== D   refs:      2,925,254,559  (1,787,284,442 rd   + 1,137,970,117 wr)
+==10030== D1  misses:        6,985,236  (    6,948,589 rd   +        36,647 wr)
+==10030== LLd misses:           43,542  (        7,788 rd   +        35,754 wr)
+==10030== D1  miss rate:           0.2% (          0.4%     +           0.0%  )
+==10030== LLd miss rate:           0.0% (          0.0%     +           0.0%  )
+==10030== 
+==10030== LL refs:           6,986,997  (    6,950,350 rd   +        36,647 wr)
+==10030== LL misses:            45,208  (        9,454 rd   +        35,754 wr)
+==10030== LL miss rate:            0.0% (          0.0%     +           0.0%  )
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_2 $ g++ main_2.cpp -g -o exec_2 && valgrind --tool=cachegrind ./exec_2 && rm exec_2 && find | grep cachegrind | xargs rm -f
+==10044== Cachegrind, a cache and branch-prediction profiler
+==10044== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==10044== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==10044== Command: ./exec_2
+==10044== 
+--10044-- warning: L3 cache found, using its data for the LL simulation.
+300
+300
+==10044== 
+==10044== I   refs:      3,614,349,967
+==10044== I1  misses:            1,766
+==10044== LLi misses:            1,672
+==10044== I1  miss rate:          0.00%
+==10044== LLi miss rate:          0.00%
+==10044== 
+==10044== D   refs:      2,101,249,360  (1,294,219,492 rd   + 807,029,868 wr)
+==10044== D1  misses:        1,669,393  (    1,632,729 rd   +      36,664 wr)
+==10044== LLd misses:           43,542  (        7,788 rd   +      35,754 wr)
+==10044== D1  miss rate:           0.1% (          0.1%     +         0.0%  )
+==10044== LLd miss rate:           0.0% (          0.0%     +         0.0%  )
+==10044== 
+==10044== LL refs:           1,671,159  (    1,634,495 rd   +      36,664 wr)
+==10044== LL misses:            45,214  (        9,460 rd   +      35,754 wr)
+==10044== LL miss rate:            0.0% (          0.0%     +         0.0%  )
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_2 $ g++ main_1.cpp -g -o exec_1 && valgrind --tool=cachegrind ./exec_1 && rm exec_1 && find | grep cachegrind | xargs rm -f
+==10059== Cachegrind, a cache and branch-prediction profiler
+==10059== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==10059== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==10059== Command: ./exec_1
+==10059== 
+--10059-- warning: L3 cache found, using its data for the LL simulation.
+400
+400
+==10059== 
+==10059== I   refs:      11,860,091,832
+==10059== I1  misses:             1,761
+==10059== LLi misses:             1,685
+==10059== I1  miss rate:           0.00%
+==10059== LLi miss rate:           0.00%
+==10059== 
+==10059== D   refs:       6,927,615,176  (4,232,826,049 rd   + 2,694,789,127 wr)
+==10059== D1  misses:        85,871,867  (   85,808,733 rd   +        63,134 wr)
+==10059== LLd misses:           101,896  (       39,663 rd   +        62,233 wr)
+==10059== D1  miss rate:            1.2% (          2.0%     +           0.0%  )
+==10059== LLd miss rate:            0.0% (          0.0%     +           0.0%  )
+==10059== 
+==10059== LL refs:           85,873,628  (   85,810,494 rd   +        63,134 wr)
+==10059== LL misses:            103,581  (       41,348 rd   +        62,233 wr)
+==10059== LL miss rate:             0.0% (          0.0%     +           0.0%  )
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_2 $ g++ main_2.cpp -g -o exec_2 && valgrind --tool=cachegrind ./exec_2 && rm exec_2 && find | grep cachegrind | xargs rm -f
+==10073== Cachegrind, a cache and branch-prediction profiler
+==10073== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==10073== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==10073== Command: ./exec_2
+==10073== 
+--10073-- warning: L3 cache found, using its data for the LL simulation.
+400   
+400
+==10073== 
+==10073== I   refs:      8,616,326,511
+==10073== I1  misses:            1,766
+==10073== LLi misses:            1,692
+==10073== I1  miss rate:          0.00%
+==10073== LLi miss rate:          0.00%
+==10073== 
+==10073== D   refs:      5,008,368,798  (3,085,063,179 rd   + 1,923,305,619 wr)
+==10073== D1  misses:        4,135,376  (    4,072,213 rd   +        63,163 wr)
+==10073== LLd misses:           89,498  (       27,265 rd   +        62,233 wr)
+==10073== D1  miss rate:           0.1% (          0.1%     +           0.0%  )
+==10073== LLd miss rate:           0.0% (          0.0%     +           0.0%  )
+==10073== 
+==10073== LL refs:           4,137,142  (    4,073,979 rd   +        63,163 wr)
+==10073== LL misses:            91,190  (       28,957 rd   +        62,233 wr)
+==10073== LL miss rate:            0.0% (          0.0%     +           0.0%  )
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_2 $ g++ main_1.cpp -g -o exec_1 && valgrind --tool=cachegrind ./exec_1 && rm exec_1 && find | grep cachegrind | xargs rm -f
+==10086== Cachegrind, a cache and branch-prediction profiler
+==10086== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==10086== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==10086== Command: ./exec_1
+==10086== 
+--10086-- warning: L3 cache found, using its data for the LL simulation.
+500
+500
+==10086== 
+==10086== I   refs:      23,154,721,487
+==10086== I1  misses:             1,762
+==10086== LLi misses:             1,686
+==10086== I1  miss rate:           0.00%
+==10086== LLi miss rate:           0.00%
+==10086== 
+==10086== D   refs:      13,523,736,800  (8,263,348,601 rd   + 5,260,388,199 wr)
+==10086== D1  misses:       188,205,097  (  188,107,970 rd   +        97,127 wr)
+==10086== LLd misses:           193,391  (       97,207 rd   +        96,184 wr)
+==10086== D1  miss rate:            1.4% (          2.3%     +           0.0%  )
+==10086== LLd miss rate:            0.0% (          0.0%     +           0.0%  )
+==10086== 
+==10086== LL refs:          188,206,859  (  188,109,732 rd   +        97,127 wr)
+==10086== LL misses:            195,077  (       98,893 rd   +        96,184 wr)
+==10086== LL miss rate:             0.0% (          0.0%     +           0.0%  )
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_2 $ g++ main_2.cpp -g -o exec_2 && valgrind --tool=cachegrind ./exec_2 && rm exec_2 && find | grep cachegrind | xargs rm -f
+==10105== Cachegrind, a cache and branch-prediction profiler
+==10105== Copyright (C) 2002-2015, and GNU GPL'd, by Nicholas Nethercote et al.
+==10105== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==10105== Command: ./exec_2
+==10105== 
+--10105-- warning: L3 cache found, using its data for the LL simulation.
+500
+500
+==10105== 
+==10105== I   refs:      16,774,612,992
+==10105== I1  misses:             1,767
+==10105== LLi misses:             1,693
+==10105== I1  miss rate:           0.00%
+==10105== LLi miss rate:           0.00%
+==10105== 
+==10105== D   refs:       9,748,093,704  (6,005,066,646 rd   + 3,743,027,058 wr)
+==10105== D1  misses:         8,059,181  (    7,962,011 rd   +        97,170 wr)
+==10105== LLd misses:           177,529  (       81,345 rd   +        96,184 wr)
+==10105== D1  miss rate:            0.1% (          0.1%     +           0.0%  )
+==10105== LLd miss rate:            0.0% (          0.0%     +           0.0%  )
+==10105== 
+==10105== LL refs:            8,060,948  (    7,963,778 rd   +        97,170 wr)
+==10105== LL misses:            179,222  (       83,038 rd   +        96,184 wr)
+==10105== LL miss rate:             0.0% (          0.0%     +           0.0%  )
+dave@dave-VirtualBox ~/dave_personal_carpet/code/cpp_2018_2/paralelos_2 $ 
