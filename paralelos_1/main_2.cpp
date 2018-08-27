@@ -5,13 +5,15 @@ using namespace std;
 
 
 int main(int argc, char** argv){
-
-  vector< vector<double> > a(argc, vector<double>(argc, 1));
-  vector<double> x(argc, 1);
+  int MAX = 0;
+  cin>>MAX;
+  
+  vector< vector<double> > a(MAX, vector<double>(MAX, 1));
+  vector<double> x(MAX, 1);
   double y = 0;
 
-  for(int j = 0; j < argc; j++){
-    for(int i = 0; i < argc; i++){
+  for(int j = 0; j < MAX; j++){
+    for(int i = 0; i < MAX; i++){
       y += a[i][j] * x[j];
     }
   }
