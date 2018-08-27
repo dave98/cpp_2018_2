@@ -3,7 +3,7 @@
 
 using namespace std;
 
-#define MAX 13000
+#define MAX 1300
 
 int main(){
 
