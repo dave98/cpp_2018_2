@@ -11,12 +11,14 @@ int main(){
   vector<double> x(MAX, 1);
   double y = 0;
 
-  for(int i = 0; i < MAX-1; i++){
-    for(int j = 0; j < MAX-1; j++){
+
+
+  for(int j = 0; j < MAX-1; j++){
+    for(int i = 0; i < MAX-1; i++){
       y += a[i][j] * x[j];
     }
   }
-
   cout<<"y: "<<y<<endl;
+
 
 }
