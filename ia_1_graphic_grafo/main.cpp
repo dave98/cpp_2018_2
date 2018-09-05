@@ -12,14 +12,15 @@
 #define PI 3.14159265f
 
 
-int extern_n_x = 50;
-int extern_n_y = 50;
+int extern_n_x = 300;
+int extern_n_y = 300;
 float extern_d_y = 1000;
 float extern_d_x = 1000;
 c_grafo grafo(extern_n_x, extern_n_y, extern_d_x, extern_d_y);
 vector<float> points_distribution_x(extern_n_x * extern_n_y, 0);
 vector<float> points_distribution_y(extern_n_x * extern_n_y, 0);
 void translate_points(float&, float&);//Adapt incoming data to the new format needed in opengl map
+void get_point(float&, float&);
 
 using namespace std;
 
@@ -35,6 +36,8 @@ void points_distribution();
 void DrawCircle(float, float, int);
 void draw_points();
 void draw_lines();
+
+
 
 int main(int argc, char** argv){
   grafo.set_configuration(1);
@@ -121,6 +124,11 @@ void translate_points(float& _x, float& _y){
   _y = (_y * extern_d_y) / glutGet(GLUT_WINDOW_WIDTH);
 }
 
+void get_point(float& _x, float& _y){
+  _x = _x/ (extern_d_x / extern_n_x-1);
+  _y = _y/ (extern_d_y / extern_n_y-1);
+}
+
 void init_GL(void) {
 	//Color del fondo de la escena
 	glClearColor(0.0f, 0.0f, 0.0f, 0.0f); //(R, G, B, transparencia) en este caso un fondo negro
@@ -149,8 +157,8 @@ void OnMouseClick(int button, int state, int x, int y){
   {
 	float x_2 = (float)x;
 	float y_2 = (float)y;
-  cout<<x_2<<";"<<y_2<<endl;
-  translate_points(x_2, y_2);
+  //cout<<x_2<<";"<<y_2<<endl;
+  get_point(x_2, y_2);
   cout<<x_2<<";"<<y_2<<endl;
 	//c_point tempo(x_2, y_2);
 	//data_point.push_back(tempo);
