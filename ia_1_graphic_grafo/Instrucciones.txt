@@ -1,0 +1,7 @@
+-> Use el botón izquierdo del mouse para colocar las posiciones en donde estarán el inicio y la llegada.
+-> Use el botón derecho del mouse en dos puntos distintos para dibujar un espacio negro, será necesario un tercer click de confirmación
+
+-> Use la Letra 'b' para visualizar la búsqueda por profundidad.
+-> Use la letra 'c' para visualizar la búsqueda Climbing.
+
+-> Será necesario refrescarla búsqueda si se hace un borrado intermedio.

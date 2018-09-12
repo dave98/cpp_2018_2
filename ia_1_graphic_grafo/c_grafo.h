@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include <vector>
+#include "c_nodo.h"
 
 using namespace std;
 
