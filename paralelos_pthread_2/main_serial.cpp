@@ -1,11 +1,8 @@
 #include <iostream>
 #include <vector>
-#include <thread>
 #include "function.h"
 
 using namespace std;
-
-void process(vector<int>, vector<int>, int, vector<int>&);
 
 
 int main(){
@@ -22,7 +19,11 @@ int main(){
 	set_vector(vec_, m);
 
 	for(unsigned int i = 0; i < matrix_.size(); i++){
-		thread(process, matrix_[i], vec_, i, std::ref(res_)).detach();
+		int local_val = 0;
+		for(unsigned int j = 0; j < matrix_[i].size(); j++){
+			local_val += matrix_[i][j] * vec_[j];
+		}
+		res_[i] = local_val;
 	}
 
 	//print_matrix(matrix_);
@@ -30,13 +31,4 @@ int main(){
 	//print_vector(res_);
 
 	return 0;
-}
-
-void process(vector<int> _m, vector<int> _v, int index, vector<int>& _r){
-	//El tamaño de _m y _v debe ser el mismo
-	int local_value = 0;
-	for(unsigned int i = 0; i < _m.size(); i++){
-		local_value += _m[i] * _v[i];
-	}
-	_r[index] = local_value;
 }
