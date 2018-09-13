@@ -1,6 +1,5 @@
 #include <iostream>
 #include <thread>
-#include <windows.h>
 
 using namespace std;
 
@@ -11,7 +10,6 @@ void foo(int x){
 
 int main(){
   thread first(foo, 1);
-  Sleep(1000);
   thread second(foo, 2);
 
   first.join();
