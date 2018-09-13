@@ -1,0 +1,13 @@
+D:\Dave\code\2018_02\paralelos_pthread_1\main.cpp: In function 'int main()':
+D:\Dave\code\2018_02\paralelos_pthread_1\main.cpp:11:3: error: 'thread' was not declared in this scope
+   thread first(foo, 1);
+   ^~~~~~
+D:\Dave\code\2018_02\paralelos_pthread_1\main.cpp:12:10: error: expected ';' before 'second'
+   thread second(foo, 2);
+          ^~~~~~
+D:\Dave\code\2018_02\paralelos_pthread_1\main.cpp:14:3: error: 'first' was not declared in this scope
+   first.join();
+   ^~~~~
+D:\Dave\code\2018_02\paralelos_pthread_1\main.cpp:15:3: error: 'second' was not declared in this scope
+   second.join();
+   ^~~~~~
