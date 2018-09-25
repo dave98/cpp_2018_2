@@ -1,0 +1,40 @@
+         CLIPS (6.30 3/17/15)
+CLIPS> (assert (color tomate rojo))
+<Fact-1>
+CLIPS> tomate rojo
+tomate
+CLIPS> rojo
+rojo
+CLIPS> color tomate?
+color
+CLIPS> facts
+facts
+CLIPS> (facts)
+f-0     (initial-fact)
+f-1     (color tomate rojo)
+For a total of 2 facts.
+CLIPS> (clear)
+CLIPS> (facts)
+f-0     (initial-fact)
+For a total of 1 fact.
+CLIPS> (facts)
+f-0     (initial-fact)
+For a total of 1 fact.
+CLIPS> (assert(color papaya naranja))
+<Fact-1>
+CLIPS> (assert(color tomate rojo))
+<Fact-2>
+CLIPS> (assert(color palta verde))
+<Fact-3>
+CLIPS> (assert(color durazno naranja)(color platano amarillo)(color uva morado))
+<Fact-6>
+CLIPS> (facts)
+f-0     (initial-fact)
+f-1     (color papaya naranja)
+f-2     (color tomate rojo)
+f-3     (color palta verde)
+f-4     (color durazno naranja)
+f-5     (color platano amarillo)
+f-6     (color uva morado)
+For a total of 7 facts.
+CLIPS> 

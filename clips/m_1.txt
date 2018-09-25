@@ -1,0 +1,106 @@
+assert(
+(huesped Mario Picazo)
+(huesped Jose Cano)
+(huesped Jose Perez Prieto)
+(huesped Jose Alaiz Llamas Garcia)
+)
+
+(defrule nombre-jose
+(huesped Jose ?)
+=>
+(printout t "Si hay alguien llamado Jose" crlf)
+)
+
+EXAMPLE_2
+
+//DATABASE
+assert(
+(huesped Mario Picazo)
+(huesped Jose Cano)
+(huesped Jose Perez Prieto)
+(huesped Jose Alaiz Llamas Garcia)
+)
+//RULES
+
+(
+defrule desinscribir-Jose Cano
+?huesped<-(huesped Jose Cano)
+=>
+(retract ?huesped)
+)
+
+(
+defrule desinscribir-Cano
+?huesped<-(huesped ?nombre Cano)
+=>
+(retract ?huesped)
+(printout t "El huesped" ?nombre "ha sido expulsado" crlf)
+) 	
+
+//2
+(
+defglobal ?*val* = 12
+)
+(
+bind ?*val* (* (mod (random) 100) 1)
+)
+///////////////////////////////////////////////////////////////////////////////////////////////
+(
+defrule ask-num
+(initial-facts)
+=>
+(printout t "Ingrese numero: " crlf)
+(assert(numero (read)))
+(printout t "Numero Ingresado: " ?*val* crlf)
+)
+
+
+(
+defrule preguntar
+?posicion<-(numero ?chariot)
+=>
+(
+while (neq ?chariot ?*val*)
+
+(
+if(> ?chariot ?*val*)
+then
+(printout t "Muy grande" crlf)
+else
+(printout t "Muy pequeño" crlf)
+)
+
+(printout t "Ingrese numero: " crlf)
+(assert(numero (read)))
+(retract ?position)
+?posicion<-(numero ?chariot)
+)
+(printout t "Numero correcto" crlf)
+)
+
+
+
+//////////////////////////////EXERCISE/////////////////////////////////////////////////////////////
+(
+defrule preguntar
+(initial-fact)
+=>
+(printout "Ingrese numero: " crlf)
+(bind ?chariot(read))
+(
+while (neq ?chariot ?*val*)
+(
+if(> ?chariot ?*val*)
+then
+(printout t "Muy grande" crlf)
+else
+(printout t "Muy pequeño" crlf)
+)
+(printout "Ingrese numero: " crlf)
+(bind ?chariot(read))
+)
+(printout t "Numero correcto" crlf)
+)
+
+
+
