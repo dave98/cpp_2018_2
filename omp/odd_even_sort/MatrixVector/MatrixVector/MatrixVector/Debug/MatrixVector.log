@@ -1,0 +1,5 @@
+﻿  pch.cpp
+c1xx : warning C4199: no se admite la búsqueda de nombres en dos fases para OpenMP, C++/CLI o C++/CX. Use /Zc:twoPhase-
+  MatrixVector.cpp
+c1xx : warning C4199: no se admite la búsqueda de nombres en dos fases para OpenMP, C++/CLI o C++/CX. Use /Zc:twoPhase-
+  MatrixVector.vcxproj -> D:\Dave\code\2018_02\omp\odd_even_sort\MatrixVector\MatrixVector\Debug\MatrixVector.exe

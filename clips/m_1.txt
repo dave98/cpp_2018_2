@@ -35,7 +35,7 @@ defrule desinscribir-Cano
 =>
 (retract ?huesped)
 (printout t "El huesped" ?nombre "ha sido expulsado" crlf)
-) 	
+)
 
 //2
 (
@@ -67,7 +67,7 @@ if(> ?chariot ?*val*)
 then
 (printout t "Muy grande" crlf)
 else
-(printout t "Muy pequeño" crlf)
+(printout t "Muy pequeï¿½o" crlf)
 )
 
 (printout t "Ingrese numero: " crlf)
@@ -82,6 +82,13 @@ else
 
 //////////////////////////////EXERCISE/////////////////////////////////////////////////////////////
 (
+defglobal ?*val* = 12
+)
+(
+bind ?*val* (* (mod (random) 100) 1)
+)
+///////////////////////////////////////
+(
 defrule preguntar
 (initial-fact)
 =>
@@ -94,13 +101,10 @@ if(> ?chariot ?*val*)
 then
 (printout t "Muy grande" crlf)
 else
-(printout t "Muy pequeño" crlf)
+(printout t "Muy pequeï¿½o" crlf)
 )
 (printout "Ingrese numero: " crlf)
 (bind ?chariot(read))
 )
 (printout t "Numero correcto" crlf)
 )
-
-
-

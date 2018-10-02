@@ -1,0 +1,3 @@
+﻿  OddEvenSort.cpp
+d:\dave\code\2018_02\omp\odd_even_sort\oddevensort\oddevensort\oddevensort.cpp(24): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+  OddEvenSort.vcxproj -> D:\Dave\code\2018_02\omp\odd_even_sort\OddEvenSort\Debug\OddEvenSort.exe

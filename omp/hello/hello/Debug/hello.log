@@ -1,0 +1,3 @@
+﻿  hello.cpp
+c1xx : warning C4199: no se admite la búsqueda de nombres en dos fases para OpenMP, C++/CLI o C++/CX. Use /Zc:twoPhase-
+  hello.vcxproj -> D:\Dave\code\2018_02\omp\hello\Debug\hello.exe
