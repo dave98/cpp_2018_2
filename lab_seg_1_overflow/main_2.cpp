@@ -14,6 +14,6 @@ int main(){
   ptr[2] = 6;
 
   free(ptr);
-  return 1;
+  return 0;
 
 }
