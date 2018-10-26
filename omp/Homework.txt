@@ -1,0 +1,15 @@
+5_1: El macro de _OPEMP señala la fecha del lanzamiento de la versión para OpenMP. Esta fecha está compuesta por mes y año.
+
+5_5: El almacenamiento de datos flotantes sigue la notación científica por lo que la primera representación del array se da de la siguiente
+	manera: 
+	
+	float a[] = {4.00e+00, 3.0e+00, 3.0e+00, 1.0e+00}
+	
+	a) La suma en este caso produce la salida 1.01e+03. Esto debido a un overflow, en la 2 y 3 tercera iteracción.
+	b) Para el segundo caso, el resultado se realiza en sumas independientes. Cada hilo posee su propios datos locales,
+	por lo que al final los resultados locales sumados serán equivalentes al del resultado principal.
+
+5_9: La asignación en la distribución de las ejecuciones durante runtime produce comportamientos extraños si es que no 
+	se especifíca la distribución para los threads. En la mayoría de los casos esta distribución tiende a dividir la
+	segmentación de tareas en partes compuestas por la mitad de elementos a procesar. En un punto de la ejecución, tal 
+	división de tareas se aproxima a cero por lo que la ejecución del programa finaliza.

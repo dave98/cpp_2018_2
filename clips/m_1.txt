@@ -1,4 +1,4 @@
-assert(
+﻿assert(
 (huesped Mario Picazo)
 (huesped Jose Cano)
 (huesped Jose Perez Prieto)
@@ -90,6 +90,40 @@ bind ?*val* (* (mod (random) 100) 1)
 ///////////////////////////////////////
 (
 defrule preguntar
+(initial-facts)
+=>
+(printout "Ingrese numero: " crlf)
+(bind ?chariot(read))
+(
+while (neq ?chariot ?*val*)
+(
+if(> ?chariot ?*val*)
+then
+(printout t "Muy grande" crlf)
+else
+(printout t "Muy chico" crlf)
+)
+(printout "Ingrese numero: " crlf)
+(bind ?chariot(read))
+)
+(printout t "Numero correcto" crlf)
+)
+
+
+
+
+
+
+//////////////////////////////EXERCISE/////////////////////////////////////////////////////////////
+(
+defglobal ?*val* = 12
+)
+(
+bind ?*val* (* (mod (random) 100) 1)
+)
+///////////////////////////////////////
+(
+defrule preguntar
 (initial-fact)
 =>
 (printout "Ingrese numero: " crlf)
@@ -108,3 +142,5 @@ else
 )
 (printout t "Numero correcto" crlf)
 )
+
+
