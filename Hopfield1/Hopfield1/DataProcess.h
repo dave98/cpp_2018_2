@@ -22,8 +22,8 @@ public:
 	DataProcess(int, int, int, string );
 	~DataProcess();
 
-	vector< gsl_matrix_int* > read_data();
-	gsl_matrix_int* get_element(string, bool); //Reconoce el primer patron acorde la patron de un documento
+	vector< gsl_matrix* > read_data();
+	gsl_matrix* get_element(string, bool); //Reconoce el primer patron acorde la patron de un documento
 };
 
 DataProcess::DataProcess(int data_number_, int data_size_, int data_distribution_,  string ruta_) {
@@ -33,11 +33,11 @@ DataProcess::DataProcess(int data_number_, int data_size_, int data_distribution
 	this->ruta = ruta_;
 }
 
-vector< gsl_matrix_int* > DataProcess::read_data() {
+vector< gsl_matrix* > DataProcess::read_data() {
 	int digit_read = 0;
 	char inner_ruta[20]; strcpy_s(inner_ruta, this->ruta.c_str());
 	fstream reader;
-	vector< gsl_matrix_int* > answer = vector<gsl_matrix_int*>(0, NULL);
+	vector< gsl_matrix* > answer = vector<gsl_matrix*>(0, NULL);
 
 	reader.open(inner_ruta, ios::in);
 
@@ -47,13 +47,13 @@ vector< gsl_matrix_int* > DataProcess::read_data() {
 	else {
 		for (int i = 0; i < this->data_number; i++) {
 			
-			gsl_matrix_int* temp = gsl_matrix_int_alloc(1, this->data_size);
+			gsl_matrix* temp = gsl_matrix_alloc(1, this->data_size);
 						
 			for (int j = 0; j < this->data_size; j++) {
 				reader >> digit_read;
 				if (digit_read < 1) { digit_read = -1; }
 				
-				gsl_matrix_int_set(temp, 0, j, digit_read);
+				gsl_matrix_set(temp, 0, j, digit_read);
 
 			}
 			answer.push_back(temp);
@@ -65,8 +65,8 @@ vector< gsl_matrix_int* > DataProcess::read_data() {
 	}
 }
 
-gsl_matrix_int* DataProcess::get_element(string ruta_, bool format) {
-	gsl_matrix_int* answer = gsl_matrix_int_alloc(1, this->data_size);
+gsl_matrix* DataProcess::get_element(string ruta_, bool format) {
+	gsl_matrix* answer = gsl_matrix_alloc(1, this->data_size);
 	int digit_read = 0;
 	fstream reader;
 	char inner_ruta[20]; strcpy_s(inner_ruta, ruta_.c_str());
@@ -83,7 +83,7 @@ gsl_matrix_int* DataProcess::get_element(string ruta_, bool format) {
 			if (format) {
 				if (digit_read < 1) { digit_read = -1; } //--
 			}
-			gsl_matrix_int_set(answer, 0, i, digit_read);
+			gsl_matrix_set(answer, 0, i, digit_read);
 		}
 		reader.close();	
 		return answer;

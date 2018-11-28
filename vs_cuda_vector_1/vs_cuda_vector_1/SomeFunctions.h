@@ -1,0 +1,4 @@
+#ifndef SOMEFUNCTIONS_H
+#define SOMEFUNCTIONS_H
+
+#endif // !SOMEFUNCTIONS_H
