@@ -155,6 +155,7 @@
     <ClInclude Include="c_tree.h" />
     <ClInclude Include="Dataset_Reader.h" />
     <ClInclude Include="pch.h" />
+    <ClInclude Include="SomeFunctions.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">

@@ -5,6 +5,7 @@
 #include <vector>
 #include <math.h>
 #include "c_nodo.h"
+#include "SomeFunctions.h"
 
 using namespace std;
 
@@ -22,11 +23,12 @@ public:
 
 	c_tree(vector< vector <string> >, int, int);
 	void main_iteraction();
-	void secondary_iteraction(vector<int>);
+	void secondary_iteraction(vector<int>, c_nodo*);
 		long double get_initial_entropia(int);
 		long double get_initial_entropia_c(int, vector<int>);
 		long double get_proporcion(string, int, vector<int>);
 		long double get_general_entropia_c(string, int, int, vector<int>);
+		vector<int> get_position_according_to_value(string, int, vector<int>);
 
 	void main_iteraction_v2();
 	void print_data();
@@ -89,40 +91,75 @@ void c_tree::main_iteraction_v2() {
 		for_work[i] = i;
 	}
 
-	this->secondary_iteraction(for_work);
+	this->secondary_iteraction(for_work, this->head);
 }
 
 //data index indica los datos a trabajar a partir de este punto
 //Secuencia iterativa
 
-void c_tree::secondary_iteraction(vector<int> data_index) {
+void c_tree::secondary_iteraction(vector<int> data_index, c_nodo* place_to_work) {
 	if (this->head == NULL) {//Si no tenemos nada en la cabeza procedemos a insertar ela division inicial
 		long double entropia_inicial = this->get_initial_entropia(this->analyze_column);
-
+		vector<int> used_index = vector<int>(0, 0);
+		vector<long double> used_index_data = vector<long double>(0, 0.0);
 		//Obteniendo el restro de entropias:
 
 		for (unsigned int i = 0; i < this->numeric_atributes.size(); i++) {
-			long double rest_operation = 0.0;
 			if (i != this->analyze_column) {
+				long double rest_operation = 0.0;
 				//Empezamos a recorrer los ATRIBUTOS
 				for (unsigned int j = 0; j < this->numeric_atributes[i].size(); j++) { //Iterando sobre los valores de cada atributo
 					rest_operation += this->get_proporcion(this->extracted_atributes[i][j], i, data_index) * this->get_general_entropia_c(this->extracted_atributes[i][j], i, this->analyze_column, data_index);
 				}
+				rest_operation = entropia_inicial + rest_operation;
+				used_index.push_back(i); used_index_data.push_back(rest_operation);
 			}
-			rest_operation = entropia_inicial + rest_operation;
-			cout << "Atributo " << i << " -> " << rest_operation << endl;
 		}
+
+		int max_value_founded = get_max_value_position_in_vector(used_index_data);
+		//print_vector(used_index); print_vector(used_index_data);
+		//cout << "Mayor: " << used_index_data[get_max_value_position_in_vector(used_index_data)] << " Indice: "<< get_max_value_position_in_vector(used_index_data) << endl;
+
+		for (unsigned int i = 0; i < this->extracted_atributes[max_value_founded].size(); i++) {
+			cout << i << " - " << this->extracted_atributes[max_value_founded][i] << endl;
+		}
+		//crear cabeza.
+		this->head = new c_nodo("__head__", -1, data_index); //Identificación unica de la cabeza.
+		//Añadiendo hijos:
+		for (unsigned int i = 0; i < this->extracted_atributes[max_value_founded].size(); i++) {
+			//cout << extracted_atributes[max_value_founded][i] << endl;
+			vector<int> values_to_checked = this->get_position_according_to_value(this->extracted_atributes[max_value_founded][i], i, data_index);
+			c_nodo* temp = new c_nodo(this->extracted_atributes[max_value_founded][i], max_value_founded, values_to_checked);
+			this->head->hijos.push_back(temp);
+		}
+
+		//this->head->print_nodo_data();
+		//Ahora nos aseguramos de recorrer los hijos,
+
 	}
 }
 
+//Creo que en lugar de buscar en toda la matriz, solo podría mandar un vector con las posibles ubicaciones
+vector<int> c_tree::get_position_according_to_value(string word, int column, vector<int> checked_values) {
+	//checked values just work for rows
+	vector<int> answer;
+	for (unsigned int i = 0; i < checked_values.size(); i++) {
+		if (word == this->data[checked_values[i]][column]) {
+			answer.push_back(i);
+		}
+	}
+	return answer;
+}
+
+
 long double c_tree::get_initial_entropia(int column) {//Indica en base a que voy a sacar la entropia inicial
 	long double answer = 0.0;
-	cout << "Entropy Main Column: " << endl;
+	//cout << "Entropy Main Column: " << endl;
 	for (unsigned int i = 0; i < this->numeric_atributes[column].size(); i++) { //Utilizamos la clasificación hecha inicialmente (todos los datos)
 		long double temp = -1.0* ((long double)this->numeric_atributes[column][i] / (long double)this->data.size());
 		cout << i << ": " << temp << endl;
 		if (temp == (long double)0) {
-			cout << "Returning intial entropy out of order in initial entropy" << endl;
+			//cout << "Returning intial entropy out of order in initial entropy" << endl;
 			answer = (long double)0;
 			return answer;
 		}
