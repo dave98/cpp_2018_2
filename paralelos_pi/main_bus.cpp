@@ -62,9 +62,14 @@ void thread_processing(int start_at, int quantity){
 		local_sum += factor / (2*start_at + 1);
 	}
 
-	mtx.lock();
+	//mtx.lock();	
+	thread::id main_t = this_thread::get_id();
+	if(main_t == this_thread::get_id()){
 		global_sum += local_sum;
-	mtx.unlock();
+	}
+	
+	//mtx.unlock();
+
 }
 
 

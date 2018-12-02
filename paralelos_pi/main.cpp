@@ -7,13 +7,13 @@ using namespace std;
 
 int main(int argc, char const *argv[])
 {
-	int n_iteracciones = 100000000;
+	int n_iteracciones = 0;
 	
 	double factor = 1.0;
 	double sum = 0.0;
 	double pi = 0;
-	//cout<<"Ingrese n: "<<endl;
-	//cin>>n_iteracciones;
+	cout<<"Ingrese n: "<<endl;
+	cin>>n_iteracciones;
 
 	unsigned t0, t1;
 
